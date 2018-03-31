@@ -63,9 +63,10 @@
 		<?php
 			echo $_SESSION['username'];
 		?>
-		&nbsp;&nbsp;
-		|||
-		<a href="logout.php">&nbsp;&nbsp;退出</a>&nbsp;&nbsp;</p>
+		&nbsp;&nbsp;|||
+		<a href="logout.php">&nbsp;&nbsp;退出</a>
+		&nbsp;&nbsp;|||&nbsp;&nbsp;
+		<a href="../../en/Admin/index.php"><img style="" src="../../../images/en.ico">&nbsp;EN</a></p>
 
 		<div>		
 			<a href="index.php"><img style="width:100px; height:95px; float:left;margin: 20px 0px 0px 0px; padding-left:5px;" src="../../../images/logo2.jpg"></a>

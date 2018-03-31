@@ -67,16 +67,18 @@
 				echo $_SESSION['username'];
 		?>
 				&nbsp;&nbsp;|||
-				<a href="logout.php">&nbsp;&nbsp;Log out</a>&nbsp;&nbsp;</p>
+				<a href="logout.php">&nbsp;&nbsp;Log out</a>
 		<?php
 			}
 			else{
 		?>
 				<p style="text-align: right;font-size: 10"><a href="login.php">&nbsp;Login</a>&nbsp;&nbsp;|||
-				<a href="signup.php">&nbsp;&nbsp;Sign Up</a>&nbsp;&nbsp;</p>
+				<a href="signup.php">&nbsp;&nbsp;Sign Up</a>
 		<?php 
 			}
 		?>
+		&nbsp;&nbsp;|||&nbsp;&nbsp;
+		<a href="../cn/index.php"><img style="" src="../../images/cn.ico">&nbsp;CN</a></p>
 		<div>	
 			<a href="index.php"><img style="width:100px; height:95px; float:left;margin: 20px 0px 0px 0px; padding-left:5px;" src="../../images/logo2.jpg"></a>
 			

@@ -17,7 +17,8 @@
 	<div id="body">
 		<div class="content" style="text-align:justify; padding-left:5px">	
 			<h4>About Us</h4>
-			<p>This website is for Final Year Project (FYP) of Faculty Computing and Informatics (FCI> in Universiti Malaysia Sabah (UMS) Malaysia only.</p>
+			<p>This website is for Final Year Project (FYP) of Faculty Computing and Informatics (FCI) in Universiti Malaysia Sabah (UMS) only.</p>
+			<br/>
 			<h4>Contact Us</h4>
 			<p>Email: alwice@hotmail.com</p>
 

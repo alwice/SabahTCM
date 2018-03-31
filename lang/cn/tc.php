@@ -23,24 +23,24 @@
 		    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 		}
 	</script>
-	<title>Terms of Use Agreement - SabahTCM</title>	
+	<title>服务条款 - SabahTCM</title>	
 </head>
 <body>
 	<div id="breadcrum">
-		<a class="btn btn-home" href="index.php"><i class="icon-home icon-large"></i>&nbsp;Home</a>&nbsp;&nbsp;>
-		<a class="btn btn-home" href="tc.php"><i class="icon-question icon-large"></i>&nbsp;Terms of Use Agreement</a>&nbsp;&nbsp;
+		<a class="btn btn-home" href="index.php"><i class="icon-home icon-large"></i>&nbsp;首页</a>&nbsp;&nbsp;>
+		<a class="btn btn-home" href="tc.php"><i class="icon-question icon-large"></i>&nbsp;服务条款</a>&nbsp;&nbsp;
 	</div>
 	</br>
-	<button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+	<button onclick="topFunction()" id="topBtn" title="Go to top">顶端</button>
 	<div id="body">
 		<div class="content" style="text-align:justify; padding-left:5px">	
-			<h4>Terms of Use Agreement</h4>
-			<b>Table of Contents</b>
+			<h4>服务条款</h4>
+			<b>目录</b>
 			
-			<ol><li><a href='#purpose'>Purpose</a></li>
-				<li><a href='#advice'>Not Healthcare Advice</a></li>
-				<li><a href='#author'>Authority</a></li>
-				<li><a href='#usage'>Site Usage & Usage Termination</a></li>
+			<ol><li><a href='#purpose'>用意</a></li>
+				<li><a href='#advice'>非保健忠告</a></li>
+				<li><a href='#author'>权限</a></li>
+				<li><a href='#usage'>修改和终止服务</a></li>
 				<li><a href='#user'>User Content and Conduct</a></li>
 				<li><a href='#privacy'>Privacy Policy</a></li>
 				<li><a href='#disclaimer'>Liability Disclaimer</a></li>
@@ -49,33 +49,33 @@
 				<li><a href='#agree'>Agreement</a></li>
 				<li><a href='#sever'>Severability; Interpretation</a></li>
 				<li><a href='#mis'>Miscellaneous</a></li>
-				<li><a href='#cu'>Contact Us</a></li>
+				<li><a href='#cu'>联系我们</a></li>
 			</ol>
 			<hr>
 
-			<ol><b><li id='purpose'>Purpose</li></b>
-				<p>Welcome to SabahTCM websites (the "Site"). This SabahTCM Terms of Use Agreement ("Agreement") sets forth the agreement between SabahTCM, and SabahTCM developers (together "We", "Us", or "Our”), and each admin ("Admin"), and each user ("User", "Your" or "You") governing the use by you of the Site, and the SabahTCM Privacy Policy (“Privacy Policy”). Please read this agreement carefully and fully before using the Site, or disclosing to us any personal information.</p>
-				<p>By using the Site, or disclosing to us any personal information: (i) you agree that you have read and understand the terms of this Agreement, (ii) you accept and agree to be bound by the terms of this Agreement, and (iii) you accept and agree to abide by all laws and regulations applicable to the subject matter of this Agreement.</p>
-				<p>IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT, DO NOT ACCESS OR OTHERWISE USE THE SITE, OR DISCLOSE TO US ANY PERSONAL INFORMATION.</p>
-				<p>The terms of use contained in this Agreement may change periodically and may be revised at any time and from time to time in our sole discretion by updating this posting. You should visit this page from time to time to review the then current terms of use because they are binding on you. Your continued use of the Site means that you accept any changes or modifications to this Agreement. If any modification is unacceptable to you, your only recourse is to terminate this Agreement by <a href="about.php">Contact Us</a>. Certain provisions of the terms of use contained in this Agreement may be superseded by legal notices or terms located on particular pages of the Site.</p></br>
+			<ol><b><li id='purpose'>用意</li></b>
+				<p>欢迎来到SabahTCM网站（“本站”）。此SabahTCM 服务条款（“协议”）阐述SabahTCM，和SabahTCM开发部（一同“我们”或者“我们的”），和全管理员，和全用户（“您”或“您的”）之间的协议以便控制您对于本站的使用，以及SabahTCM隐私政策。请在使用本网站，或向我们透露任何个人信息之前仔细阅读本协议。</p>
+				<p>通过使用本网站，或向我们透露任何个人信息：（i）您同意您已阅读并理解本协议的条款，（ii）您接受并同意接受本协议的条款，并 （iii）您接受并同意遵守适用于本协议主题事项的所有法律和法规。</p>
+				<p>如果您不同意本协议的条款，请勿访问或以其他方式使用本网站，或向我们披露任何个人信息。</p>
+				<p>本协议中包含的使用条款可能会定期更改，并且可能会随时更新，并可能会随时更新本帖。 您应该时常访问此页面，以审查当时的使用条款，因为它们对您有约束力。 您继续使用本网站即意味着您接受对本协议的任何更改或修改。 如果任何修改对您不可接受，您唯一的方法是通过<a href="about.php">联系我们</a>终止本协议。 本协议中包含的使用条款中的某些条款可能会被位于本站特定页面上的法律声明或条款所取代。</p></br>
 
-				<b><li id='advice'>Not Healthcare Advice</li></b>
-				<p>Information and other content provided on the Site, including information that may be provided on the Site directly or by linking to third-party websites are provided for informational purposes only. Please consult with a physician or other healthcare professional regarding any medical or health related diagnosis or treatment options.</p>
-				<p>Information provided on the Site and linked websites, including information relating to medical and health conditions, treatments and herbal may be provided in summary form. Information on the Site should not be considered as a substitute for advice from a healthcare professional. The Site does not recommend self-management of health issues. Information on the Site is not comprehensive and does not cover all diseases, ailments, physical conditions or their treatment. Contact your healthcare professional promptly should you have any health related questions. Never disregard or delay medical advice based upon information you may have read on the Site.</p>
-				<p>Links to or access from any third party websites or resources is not an endorsement of any information. We are not responsible for the content or performance of any third party websites. Use of any third party websites is at your own risk.</p>
-				<p>You should not use the information on the Site to diagnose or treat any health issues or for prescription of any medication or other treatment. You should always consult with your healthcare professional and read information provided, prior to using any medication, or herbal, or before beginning any treatment for a health issue. Individuals are different and may react differently to different herbal. You should consult your physician about interactions between medications you are taking. Comments made in any forums on the Site by admin or Site users are strictly their own personal views made in their own personal capacity and are not claims made by us or do they represent the our positions or views.</p>
-				<p>We are not liable for any information provided on the Site with regard to recommendations regarding herbal for any health purposes. Herbal are not intended to treat, prevent or cure disease. Consult with a healthcare professional before starting any treatment. We are not responsible for any issues that trigger from the information provided even if we have been advised of the possibility of issues.</p></br>
+				<b><li id='advice'>非保健忠告</li></b>
+				<p>本站提供的信息和其他内容，包括可能直接在站上提供或通过链接到第三方网站提供的信息仅供参考。有关任何医疗或健康相关的诊断或治疗选择，请咨询医生或其他医疗保健专业人员。</p>
+				<p>本站和链接上提供的信息，包括有关医疗和健康状况，治疗和草药的信息可能会以摘要形式提供。本站的信息不应被视为医疗保健专业人员建议的替代品。本站不建议对健康问题进行自我管理。本站的信息并不全面，并不涵盖所有疾病，身体状况或治疗。如果您有任何健康相关问题，请立即根据您在本站上阅读的信息联系您的医疗保健专业人员，切勿忽视或推迟医疗建议。</p>
+				<p>链接或从任何第三方网站或资源访问不是任何信息的认可。我们不对任何第三方网站的内容或性能负责。使用任何第三方网站的风险由您自己承担。</p>
+				<p>您不应使用网站上的信息来诊断或治疗任何健康问题或处方药物或其他治疗。在使用任何药物或草药之前，或者在开始治疗健康问题之前，您应该咨询您的医疗保健专业人员并阅读所提供的信息。不同个人对不同的草药有不同的反应。您应该咨询您的医生您正在服用的药物之间的相互作用。管理员或本站用户在网站上的任何论坛上发表的评论都严格按照他们自己的个人身份进行个人观点，而不是我们提出的声明或他们代表我们的立场或观点。</p>
+				<p>对于本站提供的任何关于草药用于任何健康目的的建议，我们不承担任何责任。草药不是为了治疗，预防或治愈疾病。在开始任何治疗之前咨询医疗保健专业人员。即使我们已被告知发生问题的可能性，我们也不会对所提供信息触发的任何问题负责。</p></br>
 
-				<b><li id='author'>Authority</li></b>
-				<p>By using our Site, you represent and agree that you are at least 18 years of age or older and are fully able and competent to enter into the terms, conditions, representations and warranties set forth in this Agreement; otherwise, please exit the Site. The Site is not intended or designed to attract users under the age of 18. We do not collect personal information from any person we know to be under the age of 18. If you are under the age of 18, you are not permitted to disclose or send to us any personal information.</p>
-				<p>The Site is operated for the Final Year Project (FYP) Universiti Malaysia Sabah (UMS) Malaysia purpose only. All the personal information sent to us is governed by the privacy policies of the Sabah. We make no representation that the Site or its content (including, without limitation, any herbal available on or through the Site) are appropriate or available for use in other locations. If you access the Site from outside the Sabah of Malaysia you do so on your own initiative and must bear all responsibility for compliance with applicable local laws. You agree you will not use the Site content or products in any country or in any manner prohibited by any applicable laws, restrictions or regulations. Users from the other countries are advised not to disclose personal information to us unless you consent to the application of Sabah law and to the use and disclosure of your information consistent with our Privacy Policy.</p></br>
+				<b><li id='author'>权限</li></b>
+				<p>通过使用我们的网站，您表示并同意您至少年满18周岁且完全有能力参与本协议中规定的条款，条件，陈述和保证;否则，请退出本站。本站的目的不是为了吸引未满18岁的用户。我们不会收集任何我们知道未满18岁的人的个人信息。如果您未满18岁，则不允许透露或发送给我们任何个人信息。</p>
+				<p>本站仅为马来西亚沙巴大学（UMS）毕业报告（FYP）运作。 所有发送给我们的个人信息都受到沙巴隐私政策的约束。 我们不保证本站或其内容（包括但不限于网站上或通过本站提供的任何草药）适合或可用于其他地点。 如果您从马来西亚沙巴境外访问本站，则您必须自行采取行动，并且必须承担遵守适用当地法律的全部责任。 您同意您不会在任何国家或以任何适用法律，限制或规定禁止的方式使用网站内容。 建议其他国家的用户不要向我们透露个人信息，除非您同意遵守沙巴法律并遵守我们的隐私政策使用和披露您的信息。</p></br>
 
-				<b><li id='usage'>Site Usage & Usage Termination</li></b>
+				<b><li id='usage'>修改和终止服务</li></b>
 				<p>You are required to establish an account on the Site in order to use certain features, such as forum. You agree to provide accurate, true, complete and current information about yourself as prompted by the Site and to promptly update such information to maintain accurate, true, complete and current information. If you provide any inaccurate, false, incomplete or outdated information or we in our sole discretion suspect that such information is inaccurate, false, incomplete or outdated, we reserve the right to suspend or terminate your account and prohibit any and all current or future use of the Site or any portion thereof by you. During the registration process you will create a username and password. You are responsible for the confidentiality of your account and password and are fully responsible for all activities that occur under your account or password. You agree to immediately notify us of any unauthorized use of your account or password or any other security breach and to ensure that you exit from your account at the end of each session. You agree to be responsible for all charges resulting from the use of your account on the Site including charges resulting from unauthorized use of your account. We are not liable for any loss or damage resulting from your failure to comply with this section.</p>
 				<p>You agree to use the Site for lawful purposes and that you are responsible for your use of and communications on the Site. You agree not to post on or transmit through the Site any unlawful, infringing, defamatory, obscene, indecent, threatening, offensive or otherwise objectionable material of any kind including any material that encourages illegal conduct or conduct that would encourage civil liability, infringe on other's intellectual property rights or otherwise violates any applicable local, state, national or international law. You agree not to use the Site in a manner that would interfere with normal operation or infringe on any others use of the Site.</p>
 				<p>You agree not to access the Site by any means other than the interface we provide. Displaying or running the Site or any information or material displayed on the Site in frames or through similar means on another website without our prior authorization is prohibited. Any permitted links to the Site must comply with all applicable laws, rules and regulations.</p>
 				<p>We make no representation that Materials contained on the Site or that herbal described on the Site are appropriate or available for use in jurisdictions outside the Sabah, or that this Agreement complies with the laws of any other country. Users of the Site outside the Sabah do so at their own initiative and risk and are responsible for complying with all applicable laws and regulations. You agree not to access the Site from any location or territory where its contents are illegal and that you and not us, are responsible for compliance with all applicable laws and regulations.</p>
-				<p>This Agreement is effective until terminated by either us or you. We, in our sole discretion, may suspend or terminate this Agreement at any time without notice and deny you access to the Site or any portion of it. You may terminate this Agreement at any time by <a href="about.php">Contact Us</a> and discontinuing all use of the Site. Upon termination by us or you, you must destroy all materials obtained from the Site including all copies of such materials whether made under the terms of use contained in this Agreement or otherwise. We reserve the right to modify or discontinue, temporarily or permanently, the Site or any portion of it with or without notice. We are not liable to you or to any third party for any modification, suspension or discontinuation of the Site.</p>
+				<p>This Agreement is effective until terminated by either us or you. We, in our sole discretion, may suspend or terminate this Agreement at any time without notice and deny you access to the Site or any portion of it. You may terminate this Agreement at any time by <a href="about.php">联系我们</a> and discontinuing all use of the Site. Upon termination by us or you, you must destroy all materials obtained from the Site including all copies of such materials whether made under the terms of use contained in this Agreement or otherwise. We reserve the right to modify or discontinue, temporarily or permanently, the Site or any portion of it with or without notice. We are not liable to you or to any third party for any modification, suspension or discontinuation of the Site.</p>
 				<p>We reserve the right to terminate any account if your order is deemed fraudulent or credit card charges are disputed. You agree that we may terminate or suspend your access to all or part of the Site, with or without notice, for any conduct that we, in our sole discretion, believes is in violation of any part of this Agreement, laws or regulations or is harmful to another user or us or our affiliates.</p>
 				<p>The following shall survive any termination of the Agreement either by us or you; Privacy, Liability Disclaimer, Severability; Interpretation, and Miscellaneous.</p></br>
 
@@ -151,8 +151,8 @@
 				<p>You may not assign this Agreement, by operation of law or otherwise, without our prior written consent. Subject to that restriction, this Agreement will be binding on, inure of the benefit of and be enforceable against the parties and their respective successors and assigns.</p>
 				<p>The failure of the SabahTCM to enforce your strict performance of any term of this Agreement will not constitute a waiver of such term and will not be considered a waiver or limit that party's right thereafter to insist upon strict adherence to that term or any other term of this Agreement. You agree that regardless of any statute or law to the contrary, any claim of cause of action arising from or relating to the use of the Site or this Agreement must be filed within one (1) year after such claim or cause of action arose or will be permanently barred. The "Liability Disclaimer" provisions of this Agreement are for the benefit of SabahTCM Entities as defined herein, and each of these individuals or entities shall have the right to assert and enforce these provisions directly against your on its own behalf.</p></br>
 
-				<b><li id='cu'>Contact Us</li></b>
-				<p>If you have any questions about this Agreement, <a href="about.php">Contact Us</a>.</p>
+				<b><li id='cu'>联系我们</li></b>
+				<p>如有疑问，请<a href="about.php">联系我们</a>。</p>
 			</ol>
 		</div>
 	</div>

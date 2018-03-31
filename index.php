@@ -1,3 +1,3 @@
 <?php
-header('location:lang/en/herbs.php');
+header('location:lang/en/index.php');
 ?>

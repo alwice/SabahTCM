@@ -44,8 +44,7 @@
 		</div>
 	
 		<div id="home" style="width:600px">
-			<div style="padding:5px 0px 5px 170px; background:grey; font-size:15px; color:white">请填以下详情</div>
-	
+			<div id="hd">请填以下详情</div>
 			<form class="form-inline" method="POST" action="" enctype="multipart/form-data">
 				<br><br>
 				<input type="hidden" name="user_id" value="<?php echo $_SESSION['userID'];?>">	
@@ -53,7 +52,7 @@
 				<input type="hidden" name="topic_id" value="<?php echo $_GET['id'];?>">
 				<!--Comment-->
 				<div class="form-group">
-					<label  style="padding-left: 80px">评论:</label>
+					<label  style="padding-left: 80px">评论：</label>
 					<textarea style="width:350px; height:160px" type="text-box" class="form-control" name="comment" placeholder="评论" required ></textarea>
 				</div>
 				<br><br>

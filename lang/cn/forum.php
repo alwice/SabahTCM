@@ -37,10 +37,10 @@
 					$cat=mysqli_query($conn,"SELECT * FROM category")or die(mysqli_error($conn));
 					while($row=mysqli_fetch_array($cat)){
 						$category_id=$row['category_id'];
-						$category=$row['category_cn'];
+						$category_cn=$row['category_cn'];
 						$category_redirect=$row['directTo'];
 				?>
-						<p><button class="form-control" name="category" value="<?php echo $category;?>" type="submit" style="margin-left" formaction="topic.php"><?php echo $category;?></button></p>
+						<p><button class="form-control" name="category" value="<?php echo $category_cn;?>" type="submit" style="margin-left" formaction="topic.php"><?php echo $category_cn;?></button></p>
 				<?php
 					}
 				?>

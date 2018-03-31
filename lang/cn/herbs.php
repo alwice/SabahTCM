@@ -13,7 +13,7 @@
 		<div>
 		</br>
 			<div class="sidebar">	
-				<h4 style="text-align:center" id="search">药草类型</h4>
+				<h4 style="text-align:center" id="search">草药类型</h4>
 				<!--Start listing all herbs-->
 				<ul id="list">		
 				<?php 							
@@ -39,7 +39,7 @@
 
 					/*if no herb is selected, print comment*/
 					if($id==NULL){
-						echo "请选择药草";
+						echo "请选择草药";
 					}
 					/*else retrieve db*/
 					else{
@@ -58,10 +58,10 @@
 						<h3 class="first"><?php echo $herb_name;?></h3>
 						</br>
 						<p><img style="width:150px; height:150px; float:right;margin:0px 0px 0px 10px" src="../../pics/<?php echo $image;?>"></p>
-						<p style="padding-bottom:4px"><b> 名称: </b><?php echo $herb_name;?></p>
-						<p style="padding-bottom:4px"><b> 别称: </b><?php echo $other_name;?></p>
-						<p style="padding-bottom:4px"><b> 学名: </b><i><?php echo $sci_name;?></i></p>		
-						<p style="padding-bottom:4px"><b> 科别: </b><?php echo $family;?></p>
+						<p style="padding-bottom:4px"><b> 名称：</b><?php echo $herb_name;?></p>
+						<p style="padding-bottom:4px"><b> 别称：</b><?php echo $other_name;?></p>
+						<p style="padding-bottom:4px"><b> 学名：</b><i><?php echo $sci_name;?></i></p>		
+						<p style="padding-bottom:4px"><b> 科别：</b><?php echo $family;?></p>
 						</br> 
 						<!--done print herb_list-->
 				<?php 	
@@ -74,9 +74,9 @@
 							$disease=$data['disease'];
 				?>	
 							<!--print herb_info-->
-							<p style="padding-bottom:4px"><b> 药用部位: </b><?php echo $part;?></p>
-							<p style="padding-bottom:4px"><b> 功效: </b><?php echo $function;?></p>
-							<p style="padding-bottom:4px"><b> 主治: </b><?php echo $disease;?></p>	
+							<p style="padding-bottom:4px"><b> 药用部位：</b><?php echo $part;?></p>
+							<p style="padding-bottom:4px"><b> 功效：</b><?php echo $function;?></p>
+							<p style="padding-bottom:4px"><b> 主治：</b><?php echo $disease;?></p>	
 							<hr>
 				<?php 		
 						} /* end while print herb_info*/

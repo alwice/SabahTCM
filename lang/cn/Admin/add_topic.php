@@ -6,58 +6,57 @@
 		$page_title="forum";
 		include("menu.php");
 	?>
-	<title>Add Topic - SabahTCM</title>
+	<title>发表课题 - SabahTCM</title>
 </head>
 <body>
 	<div id="breadcrumb">
-		<a class="btn btn-home" href="index.php"><i class="icon-home icon-large"></i>&nbsp;Home</a>&nbsp;&nbsp;>
-		<a class="btn btn-home" href="forum.php"><i class="icon-question icon-large"></i>&nbsp;Forum</a>&nbsp;&nbsp;>
+		<a class="btn btn-home" href="index.php"><i class="icon-home icon-large"></i>&nbsp;首页</a>&nbsp;&nbsp;>
+		<a class="btn btn-home" href="forum.php"><i class="icon-question icon-large"></i>&nbsp;论坛</a>&nbsp;&nbsp;>
 		<?php 
-			if($_SESSION['category']=="Question"){
+			if($_SESSION['category_cn']=="问题"){
 		?>
-				<a class="btn btn-home" href="topic.php?category=Question"><i class="icon-question icon-large"></i>&nbsp;Question</a>&nbsp;&nbsp;>
-				<a class="btn btn-home" href="add_topic.php"><i class="icon-question icon-large"></i>&nbsp;Add Question</a>&nbsp;&nbsp;
+				<a class="btn btn-home" href="topic.php?category=问题"><i class="icon-question icon-large"></i>&nbsp;问题</a>&nbsp;&nbsp;>
+				<a class="btn btn-home" href="add_topic.php"><i class="icon-question icon-large"></i>&nbsp;提问</a>&nbsp;&nbsp;
 		<?php
-			}/*end breadcrumb Question*/
-			elseif($_SESSION['category']=="Opinion and Suggestion"){
+			}/*end breadcrumb 问题*/
+			elseif($_SESSION['category_cn']=="意见和建议"){
 		?>
-				<a class="btn btn-home" href="topic.php?category=Opinion and Suggestion"><i class="icon-question icon-large"></i>&nbsp;Opinion and Suggestion</a>&nbsp;&nbsp;>
-				<a class="btn btn-home" href="add_topic.php"><i class="icon-question icon-large"></i>&nbsp;Add Topic</a>&nbsp;&nbsp;
+				<a class="btn btn-home" href="topic.php?category=意见和建议"><i class="icon-question icon-large"></i>&nbsp;意见和建议</a>&nbsp;&nbsp;>
+				<a class="btn btn-home" href="add_topic.php"><i class="icon-question icon-large"></i>&nbsp;发表话题</a>&nbsp;&nbsp;
 		<?php
-			}/*end breadcrumb Opinion and Suggestion*/
+			}/*end breadcrumb 意见和建议*/
 		?>
 	</div>
 	</br>
 	<div id="body">
-        <div style="background:lightblue" class="alert alert-info">Add Topic</div>
+        <div style="background:lightblue" class="alert alert-info">发表课题</div>
 		</br>	 
 		<div class="sidebar">	 
-			<p><a href="topic.php?category=<?php echo $_SESSION['category'];?>" class="btn btn-info"><i class="icon-arrow-left icon-large"></i>&nbsp;Back</a></p>
+			<p><a href="topic.php?category=<?php echo $_SESSION['category_cn'];?>" class="btn btn-info"><i class="icon-arrow-left icon-large"></i>&nbsp;回去</a></p>
 		</div>
 	
 		<div id="home" style="width:600px">
-			<div style="padding:5px 0px 5px 170px; background:grey; font-size:15px; color:white">Please Insert Details Below</div>		
-	
+			<div id="hd">请填以下详情</div>		
 			<form class="form-inline" method="POST" action="" enctype="multipart/form-data">
 				<br><br>
 				<input type="hidden" name="user_id" value="<?php echo $_SESSION['userID']; ?>">	
 				<input type="hidden" name="category" value="<?php echo $_SESSION['category']; ?>">
 				<!--Topic-->
 				<div class="form-group">
-					<label style="padding-left: 89px">Topic:</label>
-					<input style="width:350px" type="text" class="form-control" name="topic"  placeholder="Main Topic" required/>
+					<label style="padding-left: 80px">课题：</label>
+					<input style="width:350px" type="text" class="form-control" name="topic"  placeholder="主题" required/>
 				</div>
 				<br><br>
 				<!--Topic Describtion-->
 				<div class="form-group">
-					<label  style="padding-left: 80px">Details:</label>
-					<textarea style="width:350px; height:160px" type="text-box" class="form-control" name="topic_details" placeholder="Details of Topic" required ></textarea>
+					<label  style="padding-left: 80px">详情：</label>
+					<textarea style="width:350px; height:160px" type="text-box" class="form-control" name="topic_details" placeholder="课题详细内容" required/></textarea>
 				</div>
 				<br><br>
 				
 				<div class="control-group">
 					<div class="controls" style="padding-left: 250px" >
-					<button name="submit" type="submit" class="btn btn-save"><i class="icon-save icon-large"></i>&nbsp;Save</button>
+					<button name="submit" type="submit" class="btn btn-save"><i class="icon-save icon-large"></i>&nbsp;存档</button>
 					</div>
 				</div>
 		    </form>					
@@ -79,12 +78,12 @@
 				VALUES ('$topic','$topic_details','$user_id','$category','$datetime')";		
 			mysqli_query($conn,$sql)or die(mysqli_error($conn));
 			 
-			echo "<script>alert('Information Saved Successful.');</script>";
-			if($category=="Question"){
-				echo "<script>location.href='topic.php?category=Question';</script>";
+			echo "<script>alert('资料储存成功。');</script>";
+			if($_SESSION['category_cn']=="问题"){
+				echo "<script>location.href='topic.php?category=问题';</script>";
 			}
-			elseif($category=="Opinion and Suggestion"){
-				echo "<script>location.href='topic.php?category=Opinion and Suggestion';</script>";
+			elseif($_SESSION['category_cn']=="意见和建议"){
+				echo "<script>location.href='topic.php?category=意见和建议';</script>";
 			}
     	}
 	?>	

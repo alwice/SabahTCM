@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<!-- Website template by freewebsitetemplates.com -->
 <html>
 <head>
+	<meta http-equiv="Content-Type" conetent="text/html; charset=UTF-8">
 	<?php
 		$page_title="index";
 		include("menu.php");
 	?>
-	<meta charset="UTF-8">
 	<title>Home - SabahTCM</title>
 </head>
 <body>
@@ -14,38 +13,26 @@
 		</br>
 		<div style="border-radius:12px" id="home">
 			<div style="width:300px" class="sidebar">
-			
-				<img style="width:300px; height:200px; float:right;margin:30px 10px 55px 0px" src="images/home1.jpg" alt="Image">
-							
-					<!--	<img style="width:300px; height:200px; float:right;margin:10px 10px 55px 0px" src="images/home2.jpg" alt="Image"> !-->
-						
+				<img style="width:300px; height:200px; float:right;margin:30px 10px 55px 0px" src="../../images/home.jpg" alt="Image">			
+				<!-- <img style="width:300px; height:300px; float:right;margin:10px 10px 55px 0px" src="../../images/home2.jpg" alt="Image"> -->
 			</div>
 			<div class="content">
 			</br>
-				<h1>Apakah SabaTMed?</h1>
-				<p>Sabah Traditional Medicine Database (SabahTMed) merupakan koleksi data yang menyimpan pelbagai jenis maklumat mengenai 
-				perubatan tradisional yang diamalkan di negeri Sabah. Selain itu, Laman ini juga mampu memberikan maklumat yang ringkas dan padat
-				mengenai pengunaan perubatan herba tersebut disertai dengan gambar-gambar herba yang digunakan. </p>
+				<h1>What is SabahTCM?</h1>
+				<p>Sabah Traditional Chinese Medicine Database (SabahTCM) is a data collection that store the information about the traditional Chinese medicine/herbs that found in Sabah state. Besides, this Site also provided some information about the usage of herbs in summary and the picture.</p>
 				
-				<h1>Bolehkah SabaTMed dipercayai?</h1>
-				<p>Sabah Traditional Medicine Database (SabahTMed) merupakan koleksi data hasil daripada soal selidik dengan beberapa pengamal
-				perubatan di negeri sabah. Kebanyakan pengamal perubatan ini mempunyai pengalaman lebih daripada 20 tahun dan
-				mendapat ilimu mengenai ubat-ubatan ini daripada nenek moyang mereka.</p>
+				<h1>Can SabaTCM be trusted?</h1>
+				<p>Sabah Traditional Chinese Medicine Database (SabahTCM) collected data from validated information. In addition, SabahTCM also verified the data with expertise in Sabah.</p>
 				
-				<h1>Apakah perbezaan SabaTMed dengan aplikasi yang lain?</h1>
-				<p>Sabah Traditional Medicine Database (SabahTMed) mempunyai banyak perbezaan dengan aplikasi yang lain. Salah satu daripada
-				perbezaan SabaTMed ialah maklumat yang terkandung dalam setiap herba sangat mudah difahami bagi masyarakat sabah sendiri.
-				Selain itu, SabaTMed juga mempunyai ciri-ciri yang memudahkan pengguna seperti carian herba dari nama dan carian herba melalui penyakit
-				yang dapat diubati. Akhir sekali pengguna juga boleh menayakan soalan sekiranya ada informasi yang tidak jelas</p>
-				
+				<h1>What makes different?</h1>
+				<p>Sabah Traditional Chinese Medicine Database (SabahTCM) has the advanced in which it may be review in dwilanguage(English and Chinese). Besides, Forum is provided for the users and admins to be interact and exchange opinion.</p>
 			
-		</div>
-	</div>
-	</div>
-	
-	<div id="footer">
-		
-		<p class="footnote">&copy; 2016 Magrizef Gasah. FYP2 University Malaysia Sabah</p>
-	</div>
+			</div><!--end content div-->
+		</div><!--end div-->
+		</br></br>
+	</div><!--end body div-->
+	<?php
+		include("footer.php");
+	?>
 </body>
 </html>

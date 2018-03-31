@@ -17,7 +17,7 @@
 				<!--Start listing all herbs-->
 				<ul id="list">		
 				<?php 							
-					$disease_query=mysqli_query($conn,"SELECT disease FROM herb_info GROUP BY disease")or die(mysqli_error($conn));
+					$disease_query=mysqli_query($conn,"SELECT disease FROM herb_info_cn GROUP BY disease")or die(mysqli_error($conn));
 					while($row=mysqli_fetch_array($disease_query)){
 						$disease=$row['disease'];
 				?>			
@@ -99,7 +99,7 @@
 							<p style="padding-bottom:4px"><b>主治：</b><?php echo $disease;?></p>		
 							<hr>
 							
-							<p><a href="diseases.php?disease=<?php echo $disease;?>" class="btn btn-info"><i class="icon-arrow-left icon-large"></i>&nbsp;Back</a></p>
+							<p><a href="diseases.php?disease=<?php echo $disease;?>" class="btn btn-info"><i class="icon-arrow-left icon-large"></i>&nbsp;回去</a></p>
 				<?php	
 						}/*end else selected herb*/	
 					}/*end else selected disease*/

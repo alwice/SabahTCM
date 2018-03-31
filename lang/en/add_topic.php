@@ -36,7 +36,7 @@
 		</div>
 	
 		<div id="home" style="width:600px">
-			<div style="padding:5px 0px 5px 170px; background:grey; font-size:15px; color:white">Please Insert Details Below</div>		
+			<div id="hd">Please Insert Details Below</div>		
 	
 			<form class="form-inline" method="POST" action="" enctype="multipart/form-data">
 				<br><br>

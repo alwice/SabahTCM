@@ -24,8 +24,8 @@
 		</div>
 		<div id="home" style="width:500px">
 			<div>
-				<div style="padding:10px 5px 4px 10px; background:grey; font-size:12px; color:white">
-					<p><strong style="font-size:14px">User Login</strong></p>
+				<div id="hd">
+					<p>User Login</p>
 				</div>
 				<form class="form-inline" method="POST">
 					<div class="form-group">
@@ -63,7 +63,7 @@
 								echo '<META HTTP-EQUIV=REFRESH CONTENT="1; '.$url.'">';
 								}
 								else{
-									$url='herbs.php';
+									$url='index.php';
 									echo '<META HTTP-EQUIV=REFRESH CONTENT="1; '.$url.'">';
 								}
 							}

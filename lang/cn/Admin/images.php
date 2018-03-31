@@ -74,7 +74,7 @@
 									echo '<img style="margin-left:220px" src="../../../upload/'.$file. '" width="150" height="150" >';
 								$picUpload = $folder . $file;
 								$image1 = $picUpload; //name for uploaded image			
-								$herb_information=mysqli_query($conn,"SELECT * FROM herb_list")or die(mysqli_error($conn));
+								$herb_information=mysqli_query($conn,"SELECT * FROM herb_list_cn")or die(mysqli_error($conn));
 							
 								while($data1=mysqli_fetch_array($herb_information)){
 									$herbs_id=$data1['herb_id'];
@@ -90,7 +90,7 @@
 				?>
 										<p>草药查获</p>
 										草药名：
-										<a  href="herbs.php?id=<?php echo $herbs_id;?>&amp;herb=<?php echo $herb_name;?>"><?php echo $name; ?>&nbsp;&nbsp;&nbsp;<i class="icon-expand icon-medium">&nbsp; 详情</i></a>
+										<a  href="herbs.php?id=<?php echo $herbs_id;?>&amp;herb=<?php echo $herb_name;?>"><?php echo $herb_name; ?>&nbsp;&nbsp;&nbsp;<i class="icon-expand icon-medium">&nbsp; 详情</i></a>
 										</br>	
 				<?php
 										break;

@@ -21,13 +21,11 @@
 	<div id="body">
 	</br>
 		<div class="sidebar">	 
-			<p><a href="index.php" class="btn btn-info"><i class="icon-arrow-left icon-large"></i>&nbsp;Back</a></p>
+			<p><a href="index.php" class="btn btn-info"><i class="icon-arrow-left icon-large"></i>&nbsp;回去</a></p>
 		</div>
 		<div id="home" style="width:500px">
 			<div>
-				<div style="padding:10px 5px 4px 10px; background:grey; font-size:12px; color:white">
-					<p><strong style="font-size:14px">用户登入</strong></p>
-				</div>
+				<div id="hd">用户登入</div>
 				<form class="form-inline" method="POST">
 					<div class="form-group">
 						<label style="padding: 45px 5px 10px 85px;" for="inputEmail">用户名</label>
@@ -64,7 +62,7 @@
 								echo '<META HTTP-EQUIV=REFRESH CONTENT="1; '.$url.'">';
 								}
 								else{
-									$url='herbs.php';
+									$url='index.php';
 									echo '<META HTTP-EQUIV=REFRESH CONTENT="1; '.$url.'">';
 								}
 							}

@@ -65,7 +65,6 @@
 						$herb_info_show=mysqli_query($conn,"SELECT * FROM herb_info WHERE herb_id='$list_id' ")or die(mysqli_error($conn));
 						while($data=mysqli_fetch_array($herb_info_show)){
 							$info_id=$data['info_id'];
-							$name=$data['local_name'];
 							$part=$data['usage_part'];
 							$function=$data['function'];
 							$disease=$data['disease'];
@@ -73,7 +72,7 @@
 							<!--print herb_info-->
 							<p style="padding-bottom:4px" ><b> Part of Use: </b><?php echo $part;?></p>
 							<p style="padding-bottom:4px"><b> Expertise Function: </b><?php echo $function;?></p>
-							<p style="padding-bottom:4px"><b>Disease: </b><?php echo $disease;?>				
+							<p style="padding-bottom:4px"><b> Disease: </b><?php echo $disease;?>				
 							<hr>
 
 				<?php 		
@@ -113,7 +112,7 @@
 							</br>
 
 							<!--print herb_list-->
-							<p><img style="width:150px; height:150px; float:right;margin:0px 0px 0px 10px" src="../../../pics/<?php echo $image;?>"></p>
+							<p style="float:right;"><img style="width:150px; height:150px; margin:10px 0px 0px 5px;" src="../../../pics/<?php echo $image;?>"></p>
 							<p style="padding-bottom:4px"><b> Local Name: </b><?php echo $herb_name;?></p>
 							<p style="padding-bottom:4px"><b> Other Name: </b><?php echo $other_name;?></p>
 							<p style="padding-bottom:4px"><b> Scientific Name: </b><i><?php echo $sci_name;?></i></p>	
@@ -132,7 +131,7 @@
 								<!--print herb_info-->
 								<p style="padding-bottom:4px"><b> Part of Use: </b><?php echo $part;?></p>
 								<p style="padding-bottom:4px"><b> Expertise Function: </b><?php echo $function;?></p>
-								<p style="padding-bottom:4px"><b>Disease: </b><?php echo $disease;?>	
+								<p style="padding-bottom:4px"><b> Disease: </b><?php echo $disease;?>	
 								<!--selection m3=ud, m4=-dt-->
 								<a class="pull-right" style="color:darkblue" href="add_herbs.php?info_id=<?php echo $info_id;?>&amp;m=3"><i class="icon-edit icon-large"></i>Update</a></p>
 								<a class="pull-right" style="color:darkblue" href="add_herbs.php?info_id=<?php echo $info_id;?>&amp;m=4"><i class="icon-trash icon-large"></i>Delete Record</a>&nbsp;&nbsp;&nbsp;

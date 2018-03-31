@@ -6,17 +6,20 @@
 		$page_title="forum";
 		include("menu.php");
 		include("function.js");
+		$_SESSION['category_cn']=$_GET['category'];
 	
 		if($_GET['category']=="问题"){
+			$_SESSION['category']="Question";
 	?>
 			<title>问题 - SabahTCM</title>
 	<?php
-		}/*end title 问题*/
-		elseif($_GET['category']=="意见和建议"){
+		}/*end title Question*/
+		else if($_GET['category']=="意见和建议"){
+			$_SESSION['category']="Opinion and Suggestion";
 	?>
 			<title>意见和建议 - SabahTCM</title>
 	<?php
-		}/*end title 意见和建议*/
+		}/*end title Opinion and Suggestion*/
 	?>
 </head>
 
@@ -76,12 +79,8 @@
 
 		<div class="content" style="margin-right: 15%">
 			<?php 
-				$category_cn=$_GET['category'];
-				$_SESSION['category_cn']=$category_cn;
-				$category_query=mysqli_query($conn,"SELECT category FROM category WHERE category_cn='$category_cn'") or die(mysqli_error($conn));
-				while($data=mysqli_fetch_assoc($category_query)){
-					$category=$data['category'];
-				}
+				$category=$_SESSION['category'];
+				$category_cn=$_SESSION['category_cn'];
 				$topic_query=mysqli_query($conn,"SELECT * FROM topic WHERE category='$category' ORDER BY latest_reply_time DESC")or die(mysqli_error($conn));
 			?>
 				<table id="forum" width="95%" border="1" align="center" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">

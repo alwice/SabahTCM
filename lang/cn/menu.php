@@ -67,16 +67,18 @@
 				echo $_SESSION['username'];
 		?>
 				&nbsp;&nbsp;|||
-				<a href="logout.php">&nbsp;&nbsp;退出</a>&nbsp;&nbsp;</p>
+				<a href="logout.php">&nbsp;&nbsp;退出</a>
 		<?php
 			}
 			else{
 		?>
 				<p style="text-align: right;font-size: 15"><a href="login.php">&nbsp;登入</a>&nbsp;&nbsp;|||
-				<a href="signup.php">&nbsp;&nbsp;注册</a>&nbsp;&nbsp;</p>
+				<a href="signup.php">&nbsp;&nbsp;注册</a>
 		<?php 
 			}
 		?>
+		&nbsp;&nbsp;|||&nbsp;&nbsp;
+		<a href="../en/index.php"><img style="" src="../../images/en.ico">&nbsp;EN</a></p>
 		<div>	
 			<a href="index.php"><img style="width:100px; height:95px; float:left;margin: 20px 0px 0px 0px; padding-left:5px;" src="../../images/logo2.jpg"></a>
 			

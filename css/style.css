@@ -107,12 +107,20 @@ div.body {
 }
 
 #body div#home {
-	background:#b3b3b3;
+	background:#f3ffe2;
 	margin: 0 auto;
 	padding-bottom: 10px;
-	
-	
 }
+#body div#home div#hd,
+#body div#home div div#hd{
+	background:#226002;
+	margin: 0 auto;
+	padding:10px 5px 4px 10px;
+	font-size:15px; 
+	color: white;
+	font-weight: bold;
+}
+
 
 #body div#home div.sidebar {
 	
@@ -178,7 +186,7 @@ div.body {
 }
 
 #body div#home div.content h1 {
-	color: #fff;
+	color: #226002;
 	font-size: 20px;
 	font-weight: normal;
 	line-height: 40px;

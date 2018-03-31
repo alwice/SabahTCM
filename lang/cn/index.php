@@ -7,45 +7,32 @@
 		include("menu.php");
 	?>
 	<meta charset="UTF-8">
-	<title>Home - SabahTCM</title>
+	<title>首頁 - SabahTCM</title>
 </head>
 <body>
 	<div id="body">
 		</br>
 		<div style="border-radius:12px" id="home">
 			<div style="width:300px" class="sidebar">
-			
-				<img style="width:300px; height:200px; float:right;margin:30px 10px 55px 0px" src="images/home1.jpg" alt="Image">
-							
-					<!--	<img style="width:300px; height:200px; float:right;margin:10px 10px 55px 0px" src="images/home2.jpg" alt="Image"> !-->
-						
+				<img style="width:300px; height:200px; float:right;margin:30px 10px 55px 0px" src="../../images/home.jpg" alt="Image">	
+				<!-- <img style="width:300px; height:300px; float:right;margin:10px 10px 55px 0px" src="../../images/home2.jpg" alt="Image"> -->
 			</div>
 			<div class="content">
 			</br>
-				<h1>Apakah SabaTMed?</h1>
-				<p>Sabah Traditional Medicine Database (SabahTMed) merupakan koleksi data yang menyimpan pelbagai jenis maklumat mengenai 
-				perubatan tradisional yang diamalkan di negeri Sabah. Selain itu, Laman ini juga mampu memberikan maklumat yang ringkas dan padat
-				mengenai pengunaan perubatan herba tersebut disertai dengan gambar-gambar herba yang digunakan. </p>
+				<h1>什么是SabahTCM？</h1>
+				<p>Sabah Traditional Chinese Medicine Database（SabahTCM）是一个收集着能在沙巴州寻获的传统中草药的资料库。此外，本站也提供些许关于中草药的摘点用处以及照片。</p>
 				
-				<h1>Bolehkah SabaTMed dipercayai?</h1>
-				<p>Sabah Traditional Medicine Database (SabahTMed) merupakan koleksi data hasil daripada soal selidik dengan beberapa pengamal
-				perubatan di negeri sabah. Kebanyakan pengamal perubatan ini mempunyai pengalaman lebih daripada 20 tahun dan
-				mendapat ilimu mengenai ubat-ubatan ini daripada nenek moyang mereka.</p>
+				<h1>SabaTCM能信吗？</h1>
+				<p>Sabah Traditional Chinese Medicine Database（SabahTCM）的资料来源是以确认内容的可信度的资料。而且，SabahTCM也有与沙巴有关专家审核该资料。</p>
 				
-				<h1>Apakah perbezaan SabaTMed dengan aplikasi yang lain?</h1>
-				<p>Sabah Traditional Medicine Database (SabahTMed) mempunyai banyak perbezaan dengan aplikasi yang lain. Salah satu daripada
-				perbezaan SabaTMed ialah maklumat yang terkandung dalam setiap herba sangat mudah difahami bagi masyarakat sabah sendiri.
-				Selain itu, SabaTMed juga mempunyai ciri-ciri yang memudahkan pengguna seperti carian herba dari nama dan carian herba melalui penyakit
-				yang dapat diubati. Akhir sekali pengguna juga boleh menayakan soalan sekiranya ada informasi yang tidak jelas</p>
-				
-			
-		</div>
-	</div>
-	</div>
-	
-	<div id="footer">
-		
-		<p class="footnote">&copy; 2016 Magrizef Gasah. FYP2 University Malaysia Sabah</p>
-	</div>
+				<h1>特别之处</h1>
+				<p>Sabah Traditional Chinese Medicine Database（SabahTCM）的特处是让用户能够双语浏览（英文与中文）。此外，论坛是特别设立的，以便用户和管理员们能够交流并且交换意见。</p>
+			</div><!--end content div-->
+		</div><!--end div-->
+		</br></br>
+	</div><!--end body div-->
+	<?php
+		include("footer.php");
+	?>
 </body>
 </html>

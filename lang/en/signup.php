@@ -24,12 +24,10 @@
 	<div id="body">
 		</br>
 		<div class="sidebar">	 
-			<p><a href="herbs.php" class="btn btn-info"><i class="icon-arrow-left icon-large"></i>&nbsp;Back</a></p>
+			<p><a href="index.php" class="btn btn-info"><i class="icon-arrow-left icon-large"></i>&nbsp;Back</a></p>
 		</div>
 		<div id="home" style="width:700px">
-			<div style="padding:10px 5px 4px 10px; background:grey; font-size:12px; color:white">
-				<p><strong style="font-size:14px">Please fills the information below</strong></p>
-			</div>
+			<div id="hd">Please fills the information below</div>
 			</br></br>
 			<form class="form-inline" method="POST" action="" enctype="multipart/form-data">
 				<!--Username-->
@@ -75,14 +73,14 @@
 					$un=mysqli_fetch_assoc($user);
 					//checking the username if existed in db
 					if($un!=NULL){
-						$msg="The Username was Existed, please create Another Username.</br>";
+						$msg="The Username was Existed! Please create Another Username.\\n";
 					}
 					//for checking the email if existed in db
 					$mail=mysqli_query($conn,"SELECT email FROM user WHERE email='$email'")or die(mysqli_error($conn));
 					$em=mysqli_fetch_assoc($mail);
 					//checking the email if existed in db
 					if($em!=NULL){
-						$msg=$msg."The Email was Registered, please proceed to Login or use Different Email.</br>";
+						$msg=$msg."The Email was Registered! Please proceed to Login or use Different Email.\\n";
 					}
 					//checking password same
 					if($password!=$cpassword){
@@ -92,7 +90,7 @@
 						$sql="INSERT INTO user (username, password, email) 
 							VALUES('$username', '$cpassword', '$email')";
 						mysqli_query($conn,$sql)or die(mysqli_error($conn));
-						echo "<script>alert('Sign Up Successful!!'); location.href='herbs.php';</script>";
+						echo "<script>alert('Sign Up Successful!!'); location.href='index.php';</script>";
 					}
 					else{
 						echo "<script>alert('".$msg."');</script>";

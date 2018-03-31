@@ -90,7 +90,7 @@
 				?>
 										<p>Herb Found</p>
 										Herb Name :
-										<a  href="herbs.php?id=<?php echo $herbs_id;?>&amp;herb=<?php echo $herb_name;?>"><?php echo $name; ?>&nbsp;&nbsp;&nbsp;<i class="icon-expand icon-medium">&nbsp; Detail</i></a>
+										<a  href="herbs.php?id=<?php echo $herbs_id;?>&amp;herb=<?php echo $herb_name;?>"><?php echo $herb_name; ?>&nbsp;&nbsp;&nbsp;<i class="icon-expand icon-medium">&nbsp; Detail</i></a>
 										</br>	
 				<?php
 										break;

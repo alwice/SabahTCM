@@ -112,7 +112,7 @@
 						<td><table width="100%" border="1" cellpadding="3" bordercolor="#FFFFFF" cellspacing="1" bgcolor="#FFFFFF">
 							<tr>
 								<col width='80'>
-								<td bgcolor="#F8F7F1"><strong>回应</strong></td>
+								<td bgcolor="#F8F7F1"><strong>回复</strong></td>
 								<td bgcolor="#F8F7F1">:</td>
 								<td bgcolor="#F8F7F1"><?php echo $comment;?></td>
 							</tr>

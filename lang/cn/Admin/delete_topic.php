@@ -13,6 +13,6 @@
 	$result=mysqli_query($conn,"DELETE FROM topic WHERE topic_id=$id");
 	$result2=mysqli_query($conn,"DELETE FROM comment WHERE topic_id=$id");
 
-	echo "<script>alert('Topic Deleted!'); location.href='topic.php?category=".$_SESSION['category']."' </script>";
+	echo "<script>alert('课题删除成功！'); location.href='topic.php?category=".$_SESSION['category_cn']."' </script>";
 ?>
 </body>
