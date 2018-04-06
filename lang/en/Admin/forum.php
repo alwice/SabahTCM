@@ -7,7 +7,7 @@
 		if(!isset($_SESSION['userID'])){
 			header("location: login.php");
 		}
-		session_abort();
+		$_SESSION['pages']="forum.php";
 		$page_title="forum";
 		include("menu.php");
 	?>
@@ -50,7 +50,7 @@
 		</br>
 	</div>
 	<?php
-		include ("../footer.php");
+		include ("footer.php");
 	?>
 </body>
 </html>

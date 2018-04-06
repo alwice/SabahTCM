@@ -3,6 +3,8 @@
 <head>
 	<meta http-equiv="Content-Type" conetent="text/html; charset=UTF-8">
 	<?php
+		session_start();
+		$_SESSION['pages']="herbs.php";
 		$page_title="herbs";
 		include("menu.php");
 	?>

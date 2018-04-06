@@ -3,9 +3,12 @@
 <head>
 	<meta http-equiv="Content-Type" conetent="text/html; charset=UTF-8">
 	<?php
+		session_start();
+		$_SESSION['topic_id']=$_GET['id'];
+		$id=$_SESSION['topic_id'];
+		$_SESSION['pages']="topic_view.php?id=$id";
 		$page_title="forum";
 		include("menu.php");
-		$id=$_GET['id'];
 		$catch_topic=mysqli_query($conn,"SELECT topic FROM topic WHERE topic_id='$id'")or die(mysqli_error($conn));
 		while($catch=mysqli_fetch_assoc($catch_topic)){
 			$topic=$catch['topic'];
@@ -136,14 +139,14 @@
 				if($_SESSION['category_cn']=="问题"){
 			?>
 					<div class="content" style="background:none; margin-right">
-						<a class="btn btn-info pull-right" href="add_comment.php?id=<?php echo $id;?>"><i class="icon-plus icon-large"></i>&nbsp;回答</a>
+						<a class="btn btn-info pull-right" href="add_comment.php"><i class="icon-plus icon-large"></i>&nbsp;回答</a>
 					</div>
 			<?php
 				}/*end add topic 问题*/
 				else if($_SESSION['category_cn']=="意见和建议"){
 			?>
 					<div class="content" style="background:none; margin-right">
-						<a class="btn btn-info pull-right" href="add_comment.php?id=<?php echo $id;?>"><i class="icon-plus icon-large"></i>&nbsp;发表评论</a>
+						<a class="btn btn-info pull-right" href="add_comment.php"><i class="icon-plus icon-large"></i>&nbsp;发表评论</a>
 					</div>
 			<?php
 				}/*end add topic 意见和建议*/

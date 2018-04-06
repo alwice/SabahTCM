@@ -3,6 +3,8 @@
 <head>
 	<meta http-equiv="Content-Type" conetent="text/html; charset=UTF-8">
 	<?php
+		session_start();
+		$_SESSION['pages']="add_topic.php";
 		$page_title="forum";
 		include("menu.php");
 	?>

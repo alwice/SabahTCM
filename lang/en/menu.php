@@ -1,7 +1,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" conetent="text/html; charset=UTF-8">
-	<link href="../../images/logo2.jpg" rel="icon" > <!--Icon-->
+	<link href="../../images/logo2.png" rel="icon" > <!--Icon-->
 	<link href="../../css/font-awesome.css" rel="stylesheet" > <!--font-awsome icon-->
 	<link href="../../css/docs.css" rel="stylesheet" > <!--doc css-->
 	<link href="../../css/bootstrap.min.css" rel="stylesheet"> <!--Bootstrap-->
@@ -43,7 +43,6 @@
 </head>
 
 <?php 
-	session_start();
 	include("db_conn.php");
 	global $page_title;
 
@@ -62,7 +61,7 @@
 		<?php
 			if(isset($_SESSION['username'])){
 		?>
-				<p style="text-align: right;font-size: 10">Welcome, &nbsp;
+				<p style="text-align: right;font-size: 10">Welcome, &nbsp;<i class="icon-user icon-large"></i>
 		<?php
 				echo $_SESSION['username'];
 		?>
@@ -72,20 +71,21 @@
 			}
 			else{
 		?>
-				<p style="text-align: right;font-size: 10"><a href="login.php">&nbsp;Login</a>&nbsp;&nbsp;|||
+				<p style="text-align: right;font-size: 10"><a href="login.php"><i class="icon-user icon-large"></i>&nbsp;Login</a>&nbsp;&nbsp;|||
 				<a href="signup.php">&nbsp;&nbsp;Sign Up</a>
 		<?php 
 			}
 		?>
 		&nbsp;&nbsp;|||&nbsp;&nbsp;
-		<a href="../cn/index.php"><img style="" src="../../images/cn.ico">&nbsp;CN</a></p>
+		<a href="../cn/<?php echo $_SESSION['pages'];?>"><img  src="../../images/cn.ico">&nbsp;CN</a></p>
 		<div>	
-			<a href="index.php"><img style="width:100px; height:95px; float:left;margin: 20px 0px 0px 0px; padding-left:5px;" src="../../images/logo2.jpg"></a>
+			<a href="index.php"><img style="width:100px; height:95px; float:left;margin: 20px 0px 0px 0px; padding-left:5px;" src="../../images/logo2.png">
 			
-			<div id="logo" style="font-size:30px;color:green; padding: 40px 0px 0px 0px ;padding-left:15px;">
+			<div id="logo" style="font-size:33px; text-align:center; padding: 40px 0px 0px 0px ;padding-left:15px;">
 				<p></p>
-				<p style="background-color:#FFEED7; font-size:30px">SABAH TRADITIONAL CHINESE MEDICINE DATABASE</p>
-				
+				<div>
+					<p>SABAH TRADITIONAL CHINESE MEDICINE DATABASE</p>
+				</div></a>
 				<p style="text-align:left;font-size:25px">&nbsp;</p>
 			</div>
 		

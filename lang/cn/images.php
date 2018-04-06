@@ -3,6 +3,8 @@
 <head>
 	<meta http-equiv="Content-Type" conetent="text/html; charset=UTF-8">
 	<?php
+		session_start();
+		$_SESSION['pages']="images.php";
 		$page_title="images";
 		include("menu.php");
 		include("compareImages.php");

@@ -3,6 +3,8 @@
 <html>
 <head>
 	<?php
+		session_start();
+		$_SESSION['pages']="index.php";
 		$page_title="index";
 		include("menu.php");
 	?>
@@ -22,7 +24,7 @@
 				<h1>什么是SabahTCM？</h1>
 				<p>Sabah Traditional Chinese Medicine Database（SabahTCM）是一个收集着能在沙巴州寻获的传统中草药的资料库。此外，本站也提供些许关于中草药的摘点用处以及照片。</p>
 				
-				<h1>SabaTCM能信吗？</h1>
+				<h1>SabahTCM能信吗？</h1>
 				<p>Sabah Traditional Chinese Medicine Database（SabahTCM）的资料来源是以确认内容的可信度的资料。而且，SabahTCM也有与沙巴有关专家审核该资料。</p>
 				
 				<h1>特别之处</h1>

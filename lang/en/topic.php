@@ -3,20 +3,27 @@
 <head>
 	<meta http-equiv="Content-Type" conetent="text/html; charset=UTF-8">
 	<?php
-		$page_title="forum";
-		include("menu.php");
-		include("function.js");
-	
+		session_start();
+		$_SESSION['category']=$_GET['category'];
+
 		if($_GET['category']=="Question"){
+			$_SESSION['category_cn']="问题";
 	?>
 			<title>Question - SabahTCM</title>
 	<?php
 		}/*end title Question*/
 		elseif($_GET['category']=="Opinion and Suggestion"){
+			$_SESSION['category_cn']="意见和建议";
 	?>
 			<title>Opinion and Suggestion - SabahTCM</title>
 	<?php
 		}/*end title Opinion and Suggestion*/
+	
+		$cat=$_SESSION['category_cn'];
+		$_SESSION['pages']="topic.php?category=$cat";
+		$page_title="forum";
+		include("menu.php");
+		include("function.js");
 	?>
 </head>
 
@@ -78,7 +85,6 @@
 		<div class="content" style="margin-right: 15%">
 			<?php 
 				$category=$_GET['category'];
-				$_SESSION['category']=$category;
 				$topic_query=mysqli_query($conn,"SELECT * FROM topic WHERE category='$category' ORDER BY latest_reply_time DESC")or die(mysqli_error($conn));
 			?>
 				<table id="forum" width="95%" border="1" align="center" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">

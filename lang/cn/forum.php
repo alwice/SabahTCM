@@ -7,7 +7,8 @@
 		if(!isset($_SESSION['userID'])){
 			header("location: login.php");
 		}
-		session_abort();
+		//session_abort();
+		$_SESSION['pages']="forum.php";
 		$page_title="forum";
 		include("menu.php");
 	?>

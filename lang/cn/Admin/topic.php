@@ -3,11 +3,9 @@
 <head>
 	<meta http-equiv="Content-Type" conetent="text/html; charset=UTF-8">
 	<?php
-		$page_title="forum";
-		include("menu.php");
-		include("../function.js");
+		session_start();
 		$_SESSION['category_cn']=$_GET['category'];
-	
+		
 		if($_GET['category']=="问题"){
 			$_SESSION['category']="Question";
 	?>
@@ -20,6 +18,12 @@
 			<title>意见和建议 - SabahTCM</title>
 	<?php
 		}/*end title Opinion and Suggestion*/
+
+		$cat=$_SESSION['category'];
+		$_SESSION['pages']="topic.php?category=$cat";
+		$page_title="forum";
+		include("menu.php");
+		include("../function.js");
 	?>
 </head>
 
@@ -139,7 +143,7 @@
 		</div>
 	</div>
 	<?php
-		include ("../footer.php");
+		include ("footer.php");
 	?>
 </body>
 </html>

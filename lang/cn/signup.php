@@ -14,6 +14,8 @@
 </head>
 <body>
 	<?php
+		session_start();
+		$_SESSION['pages']="signup.php";
 		include ("menu.php");
 		$username=isset($_POST['username']) ? $_POST['username'] : NULL;
 		$email=isset($_POST['email']) ? $_POST['email'] : NULL;

@@ -3,6 +3,8 @@
 <head>
 	<meta http-equiv="Content-Type" conetent="text/html; charset=UTF-8">	
 	<?php
+		session_start();
+		$_SESSION['pages']="diseases.php";
 		$page_title="diseases";
 		include("menu.php");
 	?>

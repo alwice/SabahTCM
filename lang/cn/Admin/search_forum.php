@@ -3,6 +3,8 @@
 <head>
 	<meta http-equiv="Content-Type" conetent="text/html; charset=UTF-8">
 	<?php
+		session_start();
+		$_SESSION['pages']="search_forum.php";
 		$page_title="forum";
 		include("menu.php");
 		include("../function.js");
@@ -33,8 +35,10 @@
 		<div class="content" style="margin-right: 15%">
 			<?php
 				$submit=isset($_POST['submit'])?$_POST['submit']:NULL;
-				if($submit!=NULL){
-					$kw=$_POST['search_topic'];
+				$top=isset($_POST['search_topic'])?$_POST['search_topic']:NULL;
+				if($submit!=NULL || isset($_SESSION['search_topic'])){
+					$_SESSION['search_topic']=isset($top)?$top:$_SESSION['search_topic'];
+					$kw=$_SESSION['search_topic'];
 					$sql="SELECT * FROM topic WHERE topic LIKE '%$kw%'";
 					$query=mysqli_query($conn,$sql) or die(mysqli_error($conn));
 			?>
@@ -106,7 +110,7 @@
 		</br></br>
 	</div>
 	<?php
-		include ("../footer.php");
+		include ("footer.php");
 	?>
 </body>
 </html>

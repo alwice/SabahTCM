@@ -3,9 +3,11 @@
 <head>
 	<meta http-equiv="Content-Type" conetent="text/html; charset=UTF-8">
 	<?php
+		session_start();
+		$_SESSION['pages']="add_comment.php";
+		$id=$_SESSION['topic_id'];
 		$page_title="forum";
 		include("menu.php");
-		$id=$_GET['id'];
 		$catch_topic=mysqli_query($conn,"SELECT topic FROM topic WHERE topic_id='$id'")or die(mysqli_error($conn));
 		while($catch=mysqli_fetch_assoc($catch_topic)){
 			$topic=$catch['topic'];
@@ -49,7 +51,7 @@
 				<br><br>
 				<input type="hidden" name="user_id" value="<?php echo $_SESSION['userID'];?>">	
 				<input type="hidden" name="category" value="<?php echo $_SESSION['category'];?>">
-				<input type="hidden" name="topic_id" value="<?php echo $_GET['id'];?>">
+				<input type="hidden" name="topic_id" value="<?php echo $id;?>">
 				<!--Comment-->
 				<div class="form-group">
 					<label  style="padding-left: 80px">Comment:</label>

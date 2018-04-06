@@ -3,6 +3,8 @@
 <head>
 	<meta http-equiv="Content-Type" conetent="text/html; charset=UTF-8">
 	<?php 
+		session_start();
+		$_SESSION['pages']="login.php";
 		include("menu.php");
 	?>
 	<link href="images/logo2.jpg" rel="icon" /> <!--Icon-->

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" conetent="text/html; charset=UTF-8">
-	</head>
+</head>
 <body>
 <?php 
 	include("db_conn.php");

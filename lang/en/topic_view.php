@@ -3,9 +3,12 @@
 <head>
 	<meta http-equiv="Content-Type" conetent="text/html; charset=UTF-8">
 	<?php
+		session_start();
+		$_SESSION['topic_id']=$_GET['id'];
+		$id=$_SESSION['topic_id'];
+		$_SESSION['pages']="topic_view.php?id=$id";
 		$page_title="forum";
 		include("menu.php");
-		$id=$_GET['id'];
 		$catch_topic=mysqli_query($conn,"SELECT topic FROM topic WHERE topic_id='$id'")or die(mysqli_error($conn));
 		while($catch=mysqli_fetch_assoc($catch_topic)){
 			$topic=$catch['topic'];

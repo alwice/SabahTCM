@@ -3,20 +3,27 @@
 <head>
 	<meta http-equiv="Content-Type" conetent="text/html; charset=UTF-8">
 	<?php
-		$page_title="forum";
-		include("menu.php");
-		include("../function.js");
-	
+		session_start();
+		$_SESSION['category']=$_GET['category'];
+
 		if($_GET['category']=="Question"){
+			$_SESSION['category_cn']="问题";
 	?>
 			<title>Question - SabahTCM</title>
 	<?php
 		}/*end title Question*/
 		elseif($_GET['category']=="Opinion and Suggestion"){
+			$_SESSION['category_cn']="意见和建议";
 	?>
 			<title>Opinion and Suggestion - SabahTCM</title>
 	<?php
 		}/*end title Opinion and Suggestion*/
+	
+		$cat=$_SESSION['category_cn'];
+		$_SESSION['pages']="topic.php?category=$cat";
+		$page_title="forum";
+		include("menu.php");
+		include("../function.js");
 	?>
 </head>
 
@@ -136,7 +143,7 @@
 		</div>
 	</div>
 	<?php
-		include ("../footer.php");
+		include ("footer.php");
 	?>
 </body>
 </html>
