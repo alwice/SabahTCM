@@ -15,7 +15,7 @@
 		<a class="btn btn-home" href="disclaimer.php"><i class="icon-question icon-large"></i>&nbsp;声明</a>&nbsp;&nbsp;
 	</div>
 	</br>
-	<h4>声明</h4>
+	<h3>声明</h3>
 	<div id="body">
 		<div class="content" style="text-align:justify; padding-left:5px">	
 			<p>本站资讯与其他内容仅供参考，具体治疗请咨询医生或相关专业人士。</p>

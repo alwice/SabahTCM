@@ -46,7 +46,7 @@
 				<input type="hidden" name="category" value="<?php echo $_SESSION['category']; ?>">
 				<!--Topic-->
 				<div class="form-group">
-					<label style="padding-left: 89px">Topic:</label>
+					<label style="padding-left: 93px">Topic:</label>
 					<input style="width:350px" type="text" class="form-control" name="topic"  placeholder="Main Topic" required/>
 				</div>
 				<br><br>

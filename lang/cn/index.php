@@ -15,8 +15,8 @@
 	<div id="body">
 		</br>
 		<div style="border-radius:12px" id="home">
-			<div style="width:300px" class="sidebar">
-				<img style="width:300px; height:200px; float:right;margin:30px 10px 55px 0px" src="../../images/home.jpg" alt="Image">	
+			<div class="sidebar">
+				<img src="../../images/home.jpg" alt="Image">	
 				<!-- <img style="width:300px; height:300px; float:right;margin:10px 10px 55px 0px" src="../../images/home2.jpg" alt="Image"> -->
 			</div>
 			<div class="content">

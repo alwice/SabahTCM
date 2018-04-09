@@ -40,19 +40,19 @@
 				<br><br>
 				<!--Password-->
 				<div class="form-group">
-					<label style="padding-left: 126px">Password:</label>
+					<label style="padding-left: 128px">Password:</label>
 					<input style="width:300px" type="password" data-toggle="tooltip" data-placement="right" class="form-control" value="" name="password"  placeholder="Pa55w0rd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 characters" required>
 				</div>
 				<br><br>
 				<!--Password-->
 				<div class="form-group">
-					<label style="padding-left: 70px">Reenter Password:</label>
+					<label style="padding-left: 58px">Reenter Password:</label>
 					<input style="width:300px" type="password" data-toggle="tooltip" data-placement="right" class="form-control" value="" name="cpassword" minlength="8" placeholder="Pa55w0rd" title="Must match with Password" required>
 				</div>
 				<br><br>
 				<!--Email-->
 				<div class="form-group">
-					<label style="padding-left: 155px">Email:</label>
+					<label style="padding-left: 163px">Email:</label>
 					<input style="width:300px" type="email" data-toggle="tooltip" data-placement="right" class="form-control" value="<?php echo $email;?>" name="email" placeholder="example@email.com" required>
 				</div>
 				<br><br>

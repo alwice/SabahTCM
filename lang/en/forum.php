@@ -41,7 +41,7 @@
 						$category=$row['category'];
 						$category_redirect=$row['directTo'];
 				?>
-						<p><button class="form-control" name="category" value="<?php echo $category;?>" type="submit" style="margin-left" formaction="topic.php"><?php echo $category;?></button></p>
+						<p><button class="form-control" name="category" value="<?php echo $category;?>" type="submit" style="margin-left;" formaction="topic.php"><?php echo $category;?></button></p>
 				<?php
 					}
 				?>

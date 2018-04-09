@@ -5,13 +5,13 @@ html { overflow-y: scroll; }
 
 body {
 	background: url(../images/bg.png) repeat;
-	/*color: #878785;
+	/*color: #878785;*/
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 12px;*/
+	font-size: 15px;
 	position: absolute;
 	margin: center;
-	min-width: 1000px;
-	padding: 0;
+	width: 99%;
+	padding-left: 15px;
 }
 
 a {
@@ -39,14 +39,13 @@ p a:hover {
 #header a{
 	color:blue;
 	text-decoration: none;
-
 }
 
 #header div {
 	background: url(../images/background.jpg);
-	padding-bottom: 5px;
+	/*padding-bottom: 5px;*/
 	margin: center;
-	width: 1000px;
+	width: 100%;
 }
 
 #header div div#logo {
@@ -59,6 +58,7 @@ p a:hover {
 	width: 100%;
 }
 #header div div#logo div p{
+	font-size:40px;
 	color:green;
 }
 
@@ -86,15 +86,15 @@ p a:hover {
 
 #header div div#navigation div ul li {
 	float: left;
-	padding: 0 40px;
-	width:auto;
+	/*padding: 0 40px;*/
+	width:25%;
 }
 
 #header div div#navigation div ul li a {
 	color: #78707d;
 	display: block;
 	line-height: 40px;
-	text-align: center;
+	text-align: center;	
 	text-decoration: none;
 	text-shadow: 0 1px #f8f8fa;
 	width:auto;
@@ -120,6 +120,12 @@ div.body {
 
 #body div#home {
 	background:#f3ffe2;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+#body div#main {
+	width: 90%;
 	margin: 0 auto;
 	padding-bottom: 10px;
 }
@@ -134,33 +140,40 @@ div.body {
 }
 
 
-#body div#home div.sidebar {
-	
+#body div#home div.sidebar,
+#body div#main div.sidebar {
 	float: left;
     margin: 10px 0 0 30px;
-	width: 150px;
+	width: 25%;
+}
+#body div#home div.sidebar img{
+	margin: 30px 10px 55px 0px;
+	width: 100%;
+	height: auto;
 }
 
 #body div#home div.sidebar ul,
-#body div div.sidebar ul {
+#body div#main div.sidebar ul {
 	list-style: none;
 	margin-left: 10px;
 	margin-right: -40px;
 	padding: 0;
 }
 
-#body div#home div.sidebar ul li {
+#body div#home div.sidebar ul li,
+#body div#main div.sidebar ul li  {
 	margin: 5px 0 0;
 	overflow: hidden;
+	font-size: 15px;
 }
 
 #body div#home div.sidebar ul li.first,
-#body div div.sidebar ul li.first {
+#body div#main div.sidebar ul li.first {
 	margin: 0
 }
 
 #body div#home div.sidebar ul li h3,
-#body div div.sidebar ul li h3,
+#body div#main div.sidebar ul li h3,
 #footer div.section ul li h3 {
 	color: #626075;
 	font-size: 20px;
@@ -169,12 +182,12 @@ div.body {
 }
 
 #body div#home div.sidebar ul li img,
-#body div div.sidebar ul li img {
+#body div#main div.sidebar ul li img {
 	float: left;
 }
 
 #body div#home div.sidebar ul li p,
-#body div div.sidebar ul li p,
+#body div#main div.sidebar ul li p,
 #footer div.section ul li p {
 	float: left;
 	line-height: 24px;
@@ -182,19 +195,11 @@ div.body {
 	text-align: justify;
 }
 
-#body div#home div.sidebar ul li p {
-	width: 300px;
-}
-
-#body div div.sidebar ul li p {
-	float: none;
-}
-
 #body div#home div.content {
 	background: none;
 	float: right;
-	padding: 10px 100px 0px 0px;
-	width: 650px;
+	padding: 10px 50px 0px 0px;
+	width: 70%;
 }
 
 #body div#home div.content h1 {
@@ -206,7 +211,7 @@ div.body {
 }
 
 #body div#home div.content p,
-#body div div.content p {
+#body div#main div.content p {
 	color: #79677f;
 	line-height: 24px;
 	margin: 0 0 12px;
@@ -218,7 +223,7 @@ div.body div {
 	background: none;
 	margin: 0 auto;
 	overflow: hidden;
-	width: 1000px;
+	width: 100%;
 }
 
 div.body div {
@@ -370,41 +375,29 @@ div.body div div.content ul li div p {
 	text-align: justify;
 }
 
-#body div div.sidebar, #body div div#connect {
+#body div div#connect {
 	float: left;
 	margin: 0;
 	padding: 0;
 	width: 300px;
 }
 
-#body div div.sidebar ul {
-	padding-top: 15px;
-}
 
-#body div div.sidebar ul li img {
-	margin: 5px 15px 50px 0;
-}
 
-#body div div.sidebar ul li {
-	margin: 3px 0 0;
-	overflow: hidden;
-}
-
-#body div div.content,
+#body div#main div.content,
 #body div div#contact {
 	background: lightgrey;
 	border-radius: 10px;
 	float: right;
 	padding: 15px 20px 20px 35px;
-	width: 660px;
+	width: 70%;
 }
 
 #body div div.content h3,
 #body div div#contact h3 {
 	color: #09b3d4;
-	font-size: 20px;
+	font-size: 30px;
 	font-weight: normal;
-	margin: 50px 0 0;
 }
 
 #body div div.content h3.first,

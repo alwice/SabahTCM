@@ -79,9 +79,9 @@
 		&nbsp;&nbsp;|||&nbsp;&nbsp;
 		<a href="../en/<?php echo $_SESSION['pages'];?>"><img style="" src="../../images/en.ico">&nbsp;EN</a></p>
 		<div>	
-			<a href="index.php"><img style="width:100px; height:95px; float:left;margin: 20px 0px 0px 0px; padding-left:5px;" src="../../images/logo2.png">
+			<a href="index.php"><img style="width:120px; height:95px; float:left;margin: 20px 0px 0px 0px; padding-left:20px;" src="../../images/logo2.png">
 			
-			<div id="logo" style="font-size:33px; text-align:center; padding: 40px 0px 0px 0px ;padding-left:15px;">
+			<div id="logo" style=" text-align:center; padding: 40px 0px 0px 0px ;padding-left:15px;">
 				<p></p>
 				<div>
 					<p>SABAH TRADITIONAL CHINESE MEDICINE DATABASE</p>
@@ -93,10 +93,10 @@
 				<div>
 					<ul>
 					<b>	
-						<li class= <?php echo is_active($page_title,'herbs'); ?> ><a href="herbs.php"><i class="icon-leaf icon-large"></i>&nbsp;&nbsp;&nbsp;&nbsp;药草&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-						<li class= <?php echo is_active($page_title,'diseases'); ?> ><a href="diseases.php"><i class="icon-tasks icon-large"></i>&nbsp;&nbsp;&nbsp;&nbsp;疾病&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-						<li class= <?php echo is_active($page_title,'images'); ?> ><a href="images.php"><i class="icon-search icon-large"></i>&nbsp;&nbsp;&nbsp;&nbsp;图片&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-						<li class= <?php echo is_active($page_title,'forum'); ?> ><a href="forum.php"><i class="icon-question icon-large"></i>&nbsp;&nbsp;&nbsp;&nbsp;论坛&nbsp;&nbsp;&nbsp;&nbsp;</a></li>	
+						<li class= <?php echo is_active($page_title,'herbs'); ?> ><a href="herbs.php"><i class="icon-leaf icon-large"></i>&nbsp;&nbsp;药草</a></li>
+						<li class= <?php echo is_active($page_title,'diseases'); ?> ><a href="diseases.php"><i class="icon-tasks icon-large"></i>&nbsp;&nbsp;疾病</a></li>
+						<li class= <?php echo is_active($page_title,'images'); ?> ><a href="images.php"><i class="icon-search icon-large"></i>&nbsp;&nbsp;图片</a></li>
+						<li class= <?php echo is_active($page_title,'forum'); ?> ><a href="forum.php"><i class="icon-question icon-large"></i>&nbsp;&nbsp;论坛</a></li>	
 					</b>
 					</ul>
 				</div>

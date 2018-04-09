@@ -15,7 +15,7 @@
 		<a class="btn btn-home" href="disclaimer.php"><i class="icon-question icon-large"></i>&nbsp;Disclaimer</a>&nbsp;&nbsp;
 	</div>
 	</br>
-	<h4>Disclaimer</h4>
+	<h3>Disclaimer</h3>
 	<div id="body">
 		<div class="content" style="text-align:justify; padding-left:5px">	
 			<p>The informations and other content provided on this Site, including information that may be provided on this Site direcly or by linking to third-party websites are provided for informational purposes only. Please consult with a physician or other healthcare professional regarding any medical or health related diagnosis or treatment options.</p>

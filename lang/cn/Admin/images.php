@@ -13,13 +13,13 @@
 </head>
 <body>
 	<div id="body">
-		<div>
+		<div id="main">
 			</br> 
 			</br>
 			<div class="content" style="margin-right: 15%">
-				<h4>搜索药草</h4>
+				<h3>搜索药草</h3>
 				</br>
-				<div style="background:lightblue; width:500px;">
+				<div style="background:lightblue; width:80%; text-align: center;">
 				*****  请确认上传文档格式是 .JPG 或者 .PNG  *****
 				</div>
 				</br>

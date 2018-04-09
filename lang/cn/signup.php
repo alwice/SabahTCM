@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="Content-Type" conetent="text/html; charset=UTF-8">
 	<link href="images/logo2.jpg" rel="icon" /> <!--Icon-->
 	<link href="css/style.css" rel="stylesheet" /> <!--style navigation-->
 	<link href="css/font-awesome.css" rel="stylesheet" /> <!--font-awsome icon-->
@@ -39,7 +40,7 @@
 				<br><br>
 				<!--Password-->
 				<div class="form-group">
-					<label style="padding-left: 139px">密码：</label>
+					<label style="padding-left: 141px">密码：</label>
 					<input style="width:300px" type="password" data-toggle="tooltip" data-placement="right" class="form-control" value="" name="password"  placeholder="Pa55w0rd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="至少一个数字，一个大字母，一个小字母，以及最少八个字" required>
 				</div>
 				<br><br>
@@ -51,7 +52,7 @@
 				<br><br>
 				<!--Email-->
 				<div class="form-group">
-					<label style="padding-left: 139px">电邮：</label>
+					<label style="padding-left: 141px">电邮：</label>
 					<input style="width:300px" type="email" data-toggle="tooltip" data-placement="right" class="form-control" value="<?php echo $email;?>" name="email" placeholder="example@email.com" required>
 				</div>
 				<br><br>

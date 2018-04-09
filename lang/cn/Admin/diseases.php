@@ -13,9 +13,9 @@
 <body>
 	<div id="body">
 		</br>
-		<div>
+		<div id="main">
 			<div class="sidebar">
-				<h4 style="text-align:center" id="search">疾病种类</h4>
+				<h3 style="text-align:center" id="search">疾病种类</h3>
 				<!--Start listing all herbs-->
 				<ul id="list">		
 				<?php 							

@@ -94,7 +94,7 @@
 				<br><br>
 				<!--Usage Part-->
 				<div class="form-group">
-					<label style="padding-left: 41px">药用部位：</label>
+					<label style="padding-left: 39px">药用部位：</label>
 					<input style="width:350px" type="text" data-toggle="tooltip" data-placement="right" title="Fillin Only One Part of Usage" class="form-control" value="<?php if(isset($part)) echo $part;?>" name="part" placeholder="草药药用部位" required>
 				</div>
 				<br><br>
@@ -119,7 +119,7 @@
 						}
 					?>
 					<label style="padding-left: 70px" >图片：</label>	
-					<input class="form-control"  style="padding-left: 200;width:350px;" type="file" name="image">
+					<input class="form-control"  style="padding-left: 200;width:350px;" type="file" name="image" multiple>
 				</div>
 				<br><br>
 				<!--Save, update & delete-->

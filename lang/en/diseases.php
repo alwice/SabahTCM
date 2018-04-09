@@ -12,10 +12,10 @@
 </head>
 <body>
 	<div id="body">
-		<div>
+		<div id="main">
 		</br>
 			<div class="sidebar">
-				<h4 style="text-align:center" id="search">Diseases Category</h4>
+				<h3 style="text-align:center" id="search">Diseases Category</h3>
 				<!--Start listing all herbs-->
 				<ul id="list">		
 				<?php 							

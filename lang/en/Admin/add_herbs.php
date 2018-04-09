@@ -60,7 +60,7 @@
 		</div>
 	
 		<div id="home" style="width:600px">
-			<div style="padding:5px 0px 5px 170px; background:grey; font-size:15px; color:white">Please fills the herb's information below</div>		
+			<div id="hd">Please fills the herb's information below</div>		
 	
 			<form class="form-inline" method="POST" action="add_herbs_save.php" enctype="multipart/form-data">
 				<input type="hidden" name="mode" value="<?php echo $mode;?>">
@@ -70,43 +70,43 @@
 						
 				<!--Local Name-->
 				<div class="form-group">
-					<label style="padding-left: 70px">Local Name:</label>
+					<label style="padding-left: 80px">Local Name:</label>
 					<input style="width:350px" type="text" data-toggle="tooltip" data-placement="right" title="Fillin Only One Local Name" class="form-control" value="<?php if(isset($herb_name)) echo $herb_name;?>" name="herb_name" placeholder="Herbs' Local Name" required>
 				</div>
 				<br><br>
 				<!--Other Name-->
 				<div class="form-group">
-					<label style="padding-left: 70px">Other Name:</label>
+					<label style="padding-left: 76px">Other Name:</label>
 					<input style="width:350px" type="text" data-toggle="tooltip" data-placement="right" title="Fillin The Other Names" class="form-control" value="<?php if(isset($other_name)) echo $other_name;?>" name="other_name" placeholder="Herbs' Other Name" />
 				</div>
 				<br><br>
 				<!--Scientific Name-->
 				<div class="form-group">
-					<label style="padding-left: 44px">Scientific Name:</label>
+					<label style="padding-left: 46px">Scientific Name:</label>
 					<input style="width:350px" type="text" data-toggle="tooltip" data-placement="right" title="Fillin the Scientific Name" class="form-control" value="<?php if(isset($sci_name)) echo $sci_name;?>" name="sci_name" placeholder="Herbs' Scientific Name" required>
 				</div>
 				<br><br>
 				<!--Family-->
 				<div class="form-group">
-					<label style="padding-left: 104px">Family:</label>
+					<label style="padding-left: 122px">Family:</label>
 					<input style="width:350px" type="text" data-toggle="tooltip" data-placement="right" title="Fillin the Family" class="form-control" value="<?php if(isset($family)) echo $family;?>" name="family" placeholder="Herbs's Family" required>
 				</div>
 				<br><br>
 				<!--Usage Part-->
 				<div class="form-group">
-					<label style="padding-left: 58px">Part of Usage:</label>
+					<label style="padding-left: 64px">Part of Usage:</label>
 					<input style="width:350px" type="text" data-toggle="tooltip" data-placement="right" title="Fillin Only One Part of Usage" class="form-control" value="<?php if(isset($part)) echo $part;?>" name="part" placeholder="Herb's Usage Part" required>
 				</div>
 				<br><br>
 				<!--Function-->
 				<div class="form-group">
-					<label style="padding-left: 22px">Expertise Function:</label>
+					<label style="padding-left: 20px">Expertise Function:</label>
 					<input style="width:350px" type="text" data-toggle="tooltip" data-placement="right" title="Fillin Only One Expertise Function" class="form-control" value="<?php if(isset($function)) echo $function;?>" name="function" placeholder="Herb's Function" required>
 				</div>
 				<br><br>
 				<!--Disease-->
 				<div class="form-group">
-					<label style="padding-left: 96px">Disease:</label>
+					<label style="padding-left: 112px">Disease:</label>
 					<input style="width:350px" type="text" data-toggle="tooltip" data-placement="right" title="Fillin Only One Type of Disease" class="form-control" name="disease" value="<?php if(isset($disease)) echo $disease;?>" placeholder="Disease Treat" required>
 				</div>
 				<br><br>
@@ -118,8 +118,8 @@
 						 echo '<img style="width:150px; height:150px;margin:0px 40px 0px 250px" src="'. $dir. '/'. $image. '"  /> </br></br>';
 						}
 					?>
-					<label style="padding-left: 108px" >Image:</label>	
-					<input class="form-control"  style="padding-left: 200;width:350px;" type="file" name="image">
+					<label style="padding-left: 123px" >Image:</label>	
+					<input class="form-control"  style="padding-left: 200;width:350px;" type="file" name="image" multiple>
 				</div>
 				<br><br>
 				<!--Save, update & delete-->

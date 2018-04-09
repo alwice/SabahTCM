@@ -36,7 +36,7 @@
 					</div>
 					
 					<div class="form-group">
-						<label style="padding: 10px 7px 10px 85px;"  for="inputPassword">Password</label>
+						<label style="padding: 10px 9px 10px 85px;" for="inputPassword">Password</label>
 						<input class="form-control" type="password" name="password" id="password" placeholder="Password" required>
 					</div>
 					</br>

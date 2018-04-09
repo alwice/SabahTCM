@@ -4,8 +4,8 @@
 	<link href="../../../images/logo2.png" rel="icon" /> <!--Icon-->
 	<link href="../../../css/font-awesome.css" rel="stylesheet" /> <!--font-awsome icon-->
 	<link href="../../../css/docs.css" rel="stylesheet" /> <!--doc css-->
-	<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
 	<link href="../../../css/bootstrap.min.css" rel="stylesheet"> <!--Bootstrap-->	
+	<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
 	<link href="../../../css/selfstyle.css" rel="stylesheet" type="text/css" >	
 	<script src="../../../js/jquery-3.1.1.min.js"></script> 
 		
@@ -68,7 +68,7 @@
 		&nbsp;&nbsp;|||&nbsp;&nbsp;
 		<a href="../../cn/Admin/<?php echo $_SESSION['pages'];?>"><img style="" src="../../../images/cn.ico">&nbsp;CN</a></p>
 		<div>		
-			<a href="index.php"><img style="width:100px; height:95px; float:left;margin: 20px 0px 0px 0px; padding-left:5px;" src="../../../images/logo2.png">
+			<a href="index.php"><img style="width:120px; height:95px; float:left;margin: 20px 0px 0px 0px; padding-left:20px;" src="../../../images/logo2.png">
 			
 			<div id="logo" style="font-size:33px; text-align:center; padding: 40px 0px 0px 0px ;padding-left:15px;">
 				<p></p>
@@ -82,10 +82,10 @@
 				<div>
 					<ul>
 					<b>				
-						<li class= <?php echo is_active($page_title,'herbs'); ?> ><a href="herbs.php"><i class="icon-leaf icon-large"></i>&nbsp;&nbsp;&nbsp;&nbsp;Herbs&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-						<li class= <?php echo is_active($page_title,'diseases'); ?> ><a href="diseases.php"><i class="icon-tasks icon-large"></i>&nbsp;&nbsp;&nbsp;&nbsp;Diseases&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-						<li class= <?php echo is_active($page_title,'images'); ?> ><a href="images.php"><i class="icon-search icon-large"></i>&nbsp;&nbsp;&nbsp;&nbsp;Images&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-						<li class= <?php echo is_active($page_title,'forum'); ?> ><a href="forum.php"><i class="icon-question icon-large"></i>&nbsp;&nbsp;&nbsp;&nbsp;Forum&nbsp;&nbsp;&nbsp;&nbsp;</a></li>	
+						<li class= <?php echo is_active($page_title,'herbs'); ?> ><a href="herbs.php"><i class="icon-leaf icon-large"></i>&nbsp;&nbsp;Herbs</a></li>
+						<li class= <?php echo is_active($page_title,'diseases'); ?> ><a href="diseases.php"><i class="icon-tasks icon-large"></i>&nbsp;&nbsp;Diseases</a></li>
+						<li class= <?php echo is_active($page_title,'images'); ?> ><a href="images.php"><i class="icon-search icon-large"></i>&nbsp;&nbsp;Images</a></li>
+						<li class= <?php echo is_active($page_title,'forum'); ?> ><a href="forum.php"><i class="icon-question icon-large"></i>&nbsp;&nbsp;Forum</a></li>	
 					</b>
 					</ul>
 				</div>

@@ -13,13 +13,13 @@
 </head>
 <body>
 	<div id="body">
-		<div>
+		<div id="main">
 			</br> 
 			</br>
 			<div class="content" style="margin-right: 15%">
-				<h4>Search Herb</h4>
+				<h3>Search Herb</h3>
 				</br>
-				<div style="background:lightblue; width:500px; text-align: center">*****  Please make sure file uploaded is in format of .JPG or .PNG  *****
+				<div style="background:lightblue; width:80%; text-align: center">*****  Please make sure file uploaded is in format of .JPG or .PNG  *****
 				</div>
 				</br>
 
