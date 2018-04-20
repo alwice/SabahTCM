@@ -51,9 +51,14 @@
 							/*if no herb is selected yet, print list*/
 							/*breadcrumb*/
 							echo "</br></br>";
-							$herb_show=mysqli_query($conn,"SELECT local_name FROM herb_info WHERE disease='$disease'")or die(mysqli_error($conn));
-							while($data=mysqli_fetch_array($herb_show)){
-								$herb=$data['local_name'];
+							$herb_id_show=mysqli_query($conn,"SELECT herb_id FROM herb_info WHERE disease='$disease'")or die(mysqli_error($conn));
+							while($data=mysqli_fetch_array($herb_id_show)){
+								$herb_id=$data['herb_id'];
+
+								$herb_show=mysqli_query($conn,"SELECT local_name FROM herb_list WHERE herb_id='$herb_id'")or die(mysqli_error($conn));
+								while($data2=mysqli_fetch_array($herb_show)){
+									$herb=$data2['local_name'];
+								}
 				?>
 								<!--print list of local_name-->
 								<p style="padding-bottom:2px"><li style="display:inline-block"><a href="diseases.php?disease=<?php echo $disease;?>&amp; herb=<?php echo $herb;?>"><?php echo $herb;?></a></li></p>	
@@ -82,14 +87,14 @@
 							</br>
 							<p><img style="width:187px; height:180px; float:right;margin:0px 0px 0px 10px" src="../../pics/<?php echo $image;?>"></p>
 							<p style="padding-bottom:2px"><b>Local Name: </b><?php echo $herb_name;?></p>
-							<p style="padding-bottom:2px"><b> Other Name: </b><?php echo $other_name;?></p>
+							<p style="padding-bottom:2px"><b>Other Name: </b><?php echo $other_name;?></p>
 							<p style="padding-bottom:2px"><b>Scientific Name: </b><i><?php echo $sci_name;?></i></p>	
 							<p style="padding-bottom:2px"><b>Family: </b><?php echo $family; ?></p>	
 							</br> 
 							<!--done print herb_list-->
 				<?php
 							/*get herb_info*/
-							$herb_info_show=mysqli_query($conn,"SELECT * FROM herb_info WHERE local_name='$herb' AND disease='$disease'")or die(mysqli_error($conn));
+							$herb_info_show=mysqli_query($conn,"SELECT * FROM herb_info WHERE herb_id='$herb_id' AND disease='$disease'")or die(mysqli_error($conn));
 							while($data=mysqli_fetch_array($herb_info_show)){
 								$part=$data['usage_part'];
 								$function=$data['function'];
@@ -97,8 +102,8 @@
 							}/* end while fetch herb_info*/
 				?>
 							<!--print herb_info-->
-							<p style="padding-bottom:4px"><b> Part of Use: </b><?php echo $part;?></p>
-							<p style="padding-bottom:4px"><b> Expertise Function: </b><?php echo $function;?></p>
+							<p style="padding-bottom:4px"><b>Part of Use: </b><?php echo $part;?></p>
+							<p style="padding-bottom:4px"><b>Expertise Function: </b><?php echo $function;?></p>
 							<p style="padding-bottom:4px"><b>Disease: </b><?php echo $disease;?></p>		
 							<hr>
 							

@@ -6,15 +6,6 @@
 		$_SESSION['pages']="login.php";
 		include("menu.php");
 	?>
-	<link href="images/logo2.jpg" rel="icon" /> <!--Icon-->
-	<link href="css/style.css" rel="stylesheet" /> <!--style navigation-->
-	<link href="css/font-awesome.css" rel="stylesheet" /> <!--font-awsome icon-->
-	<link href="css/docs.css" rel="stylesheet" /> <!--doc css-->
-	<link href="css/style.css" rel="stylesheet" type="text/css" >
-	
-	<link href="css/bootstrap.min.css" rel="stylesheet"/> <!--Bootstrap-->
-	<script src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script> <!--Bootstrap script-->
 	<title>Login - SabahTCM</title>
 </head>
 <body>
@@ -40,7 +31,7 @@
 						<input class="form-control" type="password" name="password" id="password" placeholder="Password" required>
 					</div>
 					</br>
-					
+					</br><a href="forgotPassword.php" style="margin-left: 300px">Forgot Password</a>
 					<div class="form-group" style="padding-top:20px">
 						<button class="form-control" id="login" name="submit" type="submit" class="btn" style="margin-left: 200px;"><i class="icon-signin icon-large"></i>&nbsp;Login</button>
 					</div>

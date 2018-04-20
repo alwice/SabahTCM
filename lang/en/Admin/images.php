@@ -73,7 +73,7 @@
 						if($open = opendir ($folder)){
 							while(($file = readdir($open)) != false){
 								if ($file =='.' || $file =='..') continue;
-									echo '<img style="margin-left:220px" src="../../../upload/'.$file. '" width="150" height="150" >';
+									echo '<img style="margin-left:220px" src="../../../upload/'.$file. '" width="350" height="350" >';
 								$picUpload = $folder . $file;
 								$image1 = $picUpload; //name for uploaded image			
 								$herb_information=mysqli_query($conn,"SELECT * FROM herb_list")or die(mysqli_error($conn));
@@ -88,18 +88,18 @@
 								
 									$compareMachine = new compareImages($image1);
 									$diff = $compareMachine->compareWith($image2);
-									If($diff<11){
+									If($diff<22){
 				?>
 										<p>Herb Found</p>
-										Herb Name :
-										<a  href="herbs.php?id=<?php echo $herbs_id;?>&amp;herb=<?php echo $herb_name;?>"><?php echo $herb_name; ?>&nbsp;&nbsp;&nbsp;<i class="icon-expand icon-medium">&nbsp; Detail</i></a>
+										Herb Name:
+										<a href="herbs.php?id=<?php echo $herbs_id;?>&amp;herb=<?php echo $herb_name;?>"><?php echo $herb_name;?>&nbsp;&nbsp;&nbsp;<i class="icon-expand icon-medium">&nbsp; Detail</i></a>
 										</br>	
 				<?php
 										break;
 									}/*end <11*/		
 								}/*end while fetch data*/
 								// Displying the herb do not found
-								If(isset($diff) && $diff>11){
+								If(isset($diff) && $diff>22){
 				?>
 									<p>Herb Not Found</p>
 				<?php			

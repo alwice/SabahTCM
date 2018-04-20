@@ -19,11 +19,11 @@
 				<!--Start listing all herbs-->
 				<ul id="list">		
 				<?php 							
-					$herb_query=mysqli_query($conn,"SELECT * FROM herb_list_cn GROUP BY local_name")or die(mysqli_error($conn));
+					$herb_query=mysqli_query($conn,"SELECT * FROM herb_list ORDER BY local_name_cn")or die(mysqli_error($conn));
 			
 					while($row=mysqli_fetch_array($herb_query)){
 						$herbs_id=$row['herb_id'];
-						$herb_name=$row['local_name'];
+						$herb_name=$row['local_name_cn'];
 				?>
 						<li><a href="herbs.php?id=<?php echo $herbs_id;?>&amp;herb=<?php echo $herb_name;?>"><?php echo $herb_name;?><i class="pull-right col-lg-4 icon-expand icon-medium">&nbsp;详情</i></a></li>
 				<?php 
@@ -33,7 +33,7 @@
 				<!--end listing-->
 			</div><!--sidebar div-->
 			
-			<a class="btn btn-info pull-right" href="add_herbs.php"><i class="icon-plus icon-large"></i>&nbsp;添加草药</a>
+			<a class="btn btn-info pull-right" href="add_herbs.php"><i class="icon-plus icon-large"></i>&nbsp;增加草药</a>
 			</br> 
 			</br>
 			
@@ -42,20 +42,20 @@
 					if(isset($_GET['list_id'])){
 						$list_id=$_GET['list_id'];
 						/*get herb_list*/
-						$herb_list_information=mysqli_query($conn,"SELECT * FROM herb_list_cn WHERE herb_id='$list_id'")or die(mysqli_error($conn));
+						$herb_list_information=mysqli_query($conn,"SELECT * FROM herb_list WHERE herb_id='$list_id'")or die(mysqli_error($conn));
 						while($data1=mysqli_fetch_array($herb_list_information)){
 							$herb_id=$data1['herb_id'];
-							$herb_name=$data1['local_name'];
-							$other_name=$data1['other_name'];
+							$herb_name=$data1['local_name_cn'];
+							$other_name=$data1['other_name_cn'];
 							$sci_name=$data1['scientific_name'];
-							$family=$data1['family'];
+							$family=$data1['family_cn'];
 							$image=$data1['image'];
 						}
 				?>
 						<!--print herb_list-->
 						<h3 class="first"><?php echo $herb_name;?></h3>
 						</br>
-						<p><img style="width:150px; height:150px; float:right;margin:0px 0px 0px 10px" src="../../../pics/<?php echo $image;?>"></p>
+						<p><img style="width:235px; height:235px; float:right;margin:0px 0px 0px 10px" src="../../../pics/<?php echo $image;?>"></p>
 						<p style="padding-bottom:4px"><b> 名称：</b><?php echo $herb_name;?></p>
 						<p style="padding-bottom:4px"><b> 别称：</b><i><?php echo $other_name;?></i></p>
 						<p style="padding-bottom:4px"><b> 学名：</b><i><?php echo $sci_name;?></i></p>
@@ -64,12 +64,12 @@
 						<!--done print herb_list-->
 				<?php 
 						/*get herb_info*/
-						$herb_info_show=mysqli_query($conn,"SELECT * FROM herb_info_cn WHERE herb_id='$list_id' ")or die(mysqli_error($conn));
+						$herb_info_show=mysqli_query($conn,"SELECT * FROM herb_info WHERE herb_id='$list_id' ")or die(mysqli_error($conn));
 						while($data=mysqli_fetch_array($herb_info_show)){
 							$info_id=$data['info_id'];
-							$part=$data['usage_part'];
-							$function=$data['function'];
-							$disease=$data['disease'];
+							$part=$data['usage_part_cn'];
+							$function=$data['function_cn'];
+							$disease=$data['disease_cn'];
 				?>
 							<!--print herb_info-->
 							<p style="padding-bottom:4px" ><b> 药用部位：</b><?php echo $part;?></p>
@@ -96,14 +96,14 @@
 						/*else retrieve db*/
 						else{
 							/*get herb_list*/
-							$herb_list_information=mysqli_query($conn,"SELECT * FROM herb_list_cn WHERE herb_id='$id' ")or die(mysqli_error($conn));
+							$herb_list_information=mysqli_query($conn,"SELECT * FROM herb_list WHERE herb_id='$id' ")or die(mysqli_error($conn));
 				
 							while($data1=mysqli_fetch_array($herb_list_information)){
 								$list_id=$data1['herb_id'];
-								$herb_name=$data1['local_name'];
-								$other_name=$data1['other_name'];
+								$herb_name=$data1['local_name_cn'];
+								$other_name=$data1['other_name_cn'];
 								$sci_name=$data1['scientific_name'];
-								$family=$data1['family'];
+								$family=$data1['family_cn'];
 								$image=$data1['image'];
 							}
 				?>
@@ -114,7 +114,7 @@
 							</br>
 
 							<!--print herb_list-->
-							<p><img style="width:150px; height:150px; float:right;margin:0px 0px 0px 10px" src="../../../pics/<?php echo $image;?>"></p>
+							<p><img style="width:235px; height:235px; float:right;margin:10px 0px 0px 5px" src="../../../pics/<?php echo $image;?>"></p>
 							<p style="padding-bottom:4px"><b> 名称：</b><?php echo $herb_name;?></p>
 							<p style="padding-bottom:4px"><b> 别称：</b><?php echo $other_name;?></p>
 							<p style="padding-bottom:4px"><b> 学名：</b><i><?php echo $sci_name;?></i></p>	
@@ -123,12 +123,12 @@
 							<!--done print herb_list-->
 				<?php 
 							/*get herb_info*/
-							$herb_info_show=mysqli_query($conn,"SELECT * FROM herb_info_cn WHERE herb_id='$id' ")or die(mysqli_error($conn));
+							$herb_info_show=mysqli_query($conn,"SELECT * FROM herb_info WHERE herb_id='$id' ")or die(mysqli_error($conn));
 							while($data=mysqli_fetch_array($herb_info_show)){
 								$info_id=$data['info_id'];
-								$part=$data['usage_part'];
-								$function=$data['function'];
-								$disease=$data['disease'];
+								$part=$data['usage_part_cn'];
+								$function=$data['function_cn'];
+								$disease=$data['disease_cn'];
 				?>
 								<!--print herb_info-->
 								<p style="padding-bottom:4px"><b> 药用部位：</b><?php echo $part;?></p>

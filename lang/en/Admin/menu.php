@@ -64,7 +64,7 @@
 			echo $_SESSION['username'];
 		?>
 		&nbsp;&nbsp;|||
-		<a href="logout.php">&nbsp;&nbsp;Log out</a>&nbsp;&nbsp;
+		<a href="logout.php">&nbsp;&nbsp;Log out</a>
 		&nbsp;&nbsp;|||&nbsp;&nbsp;
 		<a href="../../cn/Admin/<?php echo $_SESSION['pages'];?>"><img style="" src="../../../images/cn.ico">&nbsp;CN</a></p>
 		<div>		

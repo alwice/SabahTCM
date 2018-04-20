@@ -73,14 +73,14 @@
 						if($open = opendir ($folder)){
 							while(($file = readdir($open)) != false){
 								if ($file =='.' || $file =='..') continue;
-									echo '<img style="margin-left:220px" src="../../../upload/'.$file. '" width="150" height="150" >';
+									echo '<img style="margin-left:220px" src="../../../upload/'.$file. '" width="350" height="350" >';
 								$picUpload = $folder . $file;
 								$image1 = $picUpload; //name for uploaded image			
-								$herb_information=mysqli_query($conn,"SELECT * FROM herb_list_cn")or die(mysqli_error($conn));
+								$herb_information=mysqli_query($conn,"SELECT * FROM herb_list")or die(mysqli_error($conn));
 							
 								while($data1=mysqli_fetch_array($herb_information)){
 									$herbs_id=$data1['herb_id'];
-									$herb_name=$data1['local_name'];
+									$herb_name=$data1['local_name_cn'];
 									$image=$data1['image'];
 									$folderHerb="../../../pics/";
 									$picDatabase= $folderHerb . $image;	
@@ -88,7 +88,7 @@
 								
 									$compareMachine = new compareImages($image1);
 									$diff = $compareMachine->compareWith($image2);
-									If($diff<11){
+									If($diff<22){
 				?>
 										<p>草药查获</p>
 										草药名：
@@ -99,7 +99,7 @@
 									}/*end <11*/		
 								}/*end while fetch data*/
 								// Displying the herb do not found
-								If(isset($diff) && $diff>11){
+								If(isset($diff) && $diff>22){
 				?>
 									<p>草药查询失败</p>
 				<?php			

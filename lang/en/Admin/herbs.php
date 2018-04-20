@@ -19,7 +19,7 @@
 				<!--Start listing all herbs-->
 				<ul id="list">		
 				<?php 							
-					$herb_query=mysqli_query($conn,"SELECT * FROM herb_list GROUP BY local_name")or die(mysqli_error($conn));
+					$herb_query=mysqli_query($conn,"SELECT * FROM herb_list ORDER BY local_name")or die(mysqli_error($conn));
 			
 					while($row=mysqli_fetch_array($herb_query)){
 						$herbs_id=$row['herb_id'];
@@ -55,7 +55,7 @@
 						<!--print herb_list-->
 						<h3 class="first"><?php echo $herb_name;?></h3>
 						</br>
-						<p><img style="width:150px; height:150px; float:right;margin:0px 0px 0px 10px" src="../../../pics/<?php echo $image;?>"></p>
+						<p><img style="width:250px; height:250px; float:right;margin:0px 0px 0px 10px" src="../../../pics/<?php echo $image;?>"></p>
 						<p style="padding-bottom:4px"><b> Local Name: </b><?php echo $herb_name;?></p>
 						<p style="padding-bottom:4px"><b> Other Name: </b><i><?php echo $other_name;?></i></p>
 						<p style="padding-bottom:4px"><b> Scientific Name: </b><i><?php echo $sci_name;?></i></p>
@@ -114,7 +114,7 @@
 							</br>
 
 							<!--print herb_list-->
-							<p style="float:right;"><img style="width:150px; height:150px; margin:10px 0px 0px 5px;" src="../../../pics/<?php echo $image;?>"></p>
+							<p style="float:right;"><img style="width:235px; height:235px; margin:10px 0px 0px 5px;" src="../../../pics/<?php echo $image;?>"></p>
 							<p style="padding-bottom:4px"><b> Local Name: </b><?php echo $herb_name;?></p>
 							<p style="padding-bottom:4px"><b> Other Name: </b><?php echo $other_name;?></p>
 							<p style="padding-bottom:4px"><b> Scientific Name: </b><i><?php echo $sci_name;?></i></p>	

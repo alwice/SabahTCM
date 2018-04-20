@@ -11,7 +11,7 @@
 			<a href=about.php>关于我们</a>
 			</br></br>
 			<p style="text-align: center;"><i>本站信息仅供参考，不能作为诊断及医疗的依据。具体治疗请咨询医生或相关专业人士。</i></p>
-			<p class="footnote">&copy; 2018 University Malaysia Sabah</p>
+			<p class="footnote">&copy; 2018 Universiti Malaysia Sabah</p>
 		</div>
 		
 	</div>
