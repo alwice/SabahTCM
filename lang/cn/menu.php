@@ -7,7 +7,9 @@
 	<link href="../../css/bootstrap.min.css" rel="stylesheet"> <!--Bootstrap-->
 	<link href="../../css/style.css" rel="stylesheet" type="text/css" >
 	<link href="../../css/selfstyle.css" rel="stylesheet" type="text/css" >	
-	<script src="../../js/jquery-3.1.1.min.js"></script>	
+	<script src="../../js/jquery-3.1.1.min.js"></script>
+	<script src="../../js/self.js"></script>
+		
 	<script> 
 		(function ($) {
 		  	jQuery.expr[':'].Contains = function(a,i,m){
@@ -77,14 +79,14 @@
 			}
 		?>
 		&nbsp;&nbsp;|||&nbsp;&nbsp;
-		<a href="../en/<?php echo $_SESSION['pages'];?>"><img style="" src="../../images/en.ico">&nbsp;EN</a></p>
+		<a href="../en/<?php echo $_SESSION['pages'];?>"><img src="../../images/en.ico">&nbsp;EN</a></p>
 		<div>	
 			<a href="index.php"><img style="width:120px; height:95px; float:left;margin: 20px 0px 0px 0px; padding-left:20px;" src="../../images/logo2.png">
 			
-			<div id="logo" style=" text-align:center; padding: 40px 0px 0px 0px ;padding-left:15px;">
+			<div id="logo" style="text-align:center; padding: 20px 0px 0px 0px;">
 				<p></p>
 				<div>
-					<p>SABAH TRADITIONAL CHINESE MEDICINE DATABASE</p>
+					<p style="font-size:50px;">SABAH TRADITIONAL CHINESE MEDICINE DATABASE</p>
 				</div></a>
 				<p style="text-align:left;font-size:25px">&nbsp;</p>
 			</div>

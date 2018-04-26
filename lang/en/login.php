@@ -52,7 +52,7 @@
 								mysqli_close($conn);
 
 								if($_SESSION['isAdmin']==1){
-								$url='admin';
+								$url='Admin';
 								echo '<META HTTP-EQUIV=REFRESH CONTENT="1; '.$url.'">';
 								}
 								else{

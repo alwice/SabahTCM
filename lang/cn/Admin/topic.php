@@ -23,7 +23,6 @@
 		$_SESSION['pages']="topic.php?category=$cat";
 		$page_title="forum";
 		include("menu.php");
-		include("../function.js");
 	?>
 </head>
 
@@ -79,20 +78,19 @@
 			}/*end add topic 意见和建议*/
 		?>
 		</br>
-		</br>
 
 		<div class="content" style="margin-right: 15%">
 			<?php 
 				$category=$_SESSION['category'];
 				$category_cn=$_SESSION['category_cn'];
-				$topic_query=mysqli_query($conn,"SELECT * FROM topic WHERE category='$category' ORDER BY latest_reply_time DESC")or die(mysqli_error($conn));
+				$topic_query=mysqli_query($conn,"SELECT * FROM topic WHERE category='$category' AND isReview=1 ORDER BY latest_reply_time DESC")or die(mysqli_error($conn));
 			?>
-				<table id="forum" width="95%" border="1" align="center" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">
-					<thead><tr>
-						<th width="50%" bgcolor="#E6E6E6" style="text-align: center;" onclick="sortTable(0)"><strong>课题</strong></th>
-						<th width="5%" bgcolor="#E6E6E6" style="text-align: center;" onclick="sortTable(1)"><strong>回复</strong></th>
-						<th width="20%" colspan="2" bgcolor="#E6E6E6" style="text-align: center;" onclick="sortTable(3)"><strong>创建</strong></th>
-						<th width="20%" colspan="2" bgcolor="#E6E6E6" style="text-align: center;" onclick="sortTable(5)"><strong>最后回复</strong></th>	
+				<table id="forum" width="95%" border="1" align="center" cellpadding="3" cellspacing="1">
+					<thead  style="background-color: #E6E6E6"><tr>
+						<th width="50%" style="text-align: center;" onclick="sortTable(0)"><strong>课题</strong></th>
+						<th width="5%" style="text-align: center;" onclick="sortTable(1)"><strong>回复</strong></th>
+						<th width="20%" colspan="2" style="text-align: center;" onclick="sortTable(3)"><strong>创建</strong></th>
+						<th width="20%" colspan="2" style="text-align: center;" onclick="sortTable(5)"><strong>最后回复</strong></th>	
 					</tr></thead><tbody>
 			<?php
 					while($rows=mysqli_fetch_array($topic_query)){
@@ -123,20 +121,20 @@
 							}
 						}
 			?>
-						<tr>
-							<td bgcolor="#FFFFFF">&nbsp;&nbsp;<?php echo $topic;?>&nbsp;&nbsp;<a href="topic_view.php?id=<?php echo $topic_id;?>"><i class="icon-signin icon-large"></i></a><BR></td>
-							<td align="center" bgcolor="#FFFFFF"><?php echo $reply; ?></td>
-							<td width="10%" align="center" bgcolor="#FFFFFF"><?php echo $topic_user;?></td>
-							<td width="10%" align="center" bgcolor="#FFFFFF"><?php echo $topic_time;?></td>
-							<td width="10%" align="center" bgcolor="#FFFFFF"><?php echo $comment_user;?></td>
-							<td width="10%" align="center" bgcolor="#FFFFFF"><?php echo $comment_time;?></td>
+						<tr style="background-color: #FFFFFF">
+							<td>&nbsp;&nbsp;<?php echo $topic;?>&nbsp;&nbsp;<a href="topic_view.php?id=<?php echo $topic_id;?>"><i class="icon-signin icon-large"></i></a><BR></td>
+							<td align="center"><?php echo $reply; ?></td>
+							<td width="10%" align="center"><?php echo $topic_user;?></td>
+							<td width="10%" align="center"><?php echo $topic_time;?></td>
+							<td width="10%" align="center"><?php echo $comment_user;?></td>
+							<td width="10%" align="center"><?php echo $comment_time;?></td>
 						</tr>
 			<?php
 					}/*end while list*/
 					mysqli_close($conn);
 			?>
-					</tbody><tfoot><tr>
-						<td colspan="6" align="right" bgcolor="#E6E6E6">&nbsp;</td>
+					</tbody><tfoot style="background-color: #E6E6E6"><tr>
+						<td colspan="6">&nbsp;</td>
 					</tr></tfoot>
 				</table>
 				</br></br>

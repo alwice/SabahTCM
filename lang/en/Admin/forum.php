@@ -5,7 +5,7 @@
 	<?php
 		session_start();
 		if(!isset($_SESSION['userID'])){
-			header("location: login.php");
+			echo "<script>location.href='../login.php';</script>";
 		}
 		$_SESSION['pages']="forum.php";
 		$page_title="forum";
@@ -33,6 +33,7 @@
 		</br></br>
 		<div class="content" style="margin-right: 15%">
 			<form action="" method="get">
+				<p><button class="form-control" name="review_topic" value="review_topic" type="submit" style="margin-left" formaction="review_topic.php">Review Topic</button></p>
 				<?php
 					$cat=mysqli_query($conn,"SELECT * FROM category")or die(mysqli_error($conn));
 					while($row=mysqli_fetch_array($cat)){

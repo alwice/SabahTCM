@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" conetent="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<?php
 		session_start();
 		$_SESSION['pages']="herbs.php";
@@ -60,11 +61,23 @@
 						<!--print herb_list-->
 						<h3 class="first"><?php echo $herb_name;?></h3>
 						</br>
-						<p><img style="width:250px; height:250px; float:right;margin:0px 0px 0px 10px" src="../../pics/<?php echo $image;?>"></p>
-						<p style="padding-bottom:4px"><b> Local Name: </b><?php echo $herb_name;?></p>
-						<p style="padding-bottom:4px"><b> Other Name: </b><?php echo $other_name;?></p>
-						<p style="padding-bottom:4px"><b> Scientific Name: </b><i><?php echo $sci_name;?></i></p>				
-						<p style="padding-bottom:4px"><b> Family: </b><?php echo $family;?></p>
+						<img id="herbImg" alt="<?php echo $herb_name;?>" width="30%" height="auto" style="float:right;margin:5% 0px 0px 5px;" src="../../pics/<?php echo $image;?>" onclick="enlarge();">
+						
+						<!-- The Modal -->
+						<div id="enlargeImg" class="enlarge">
+							<!--Close button-->
+						  	<span class="closeImg">&times;</span>
+						  	<!--Caption-->
+						  	<div id="caption"></div>
+						  	<!--Content-->
+						  	<img class="largeImg" id="bigImg">
+						  	
+						</div>
+
+						<p style="padding-bottom:1%"><b> Local Name: </b><?php echo $herb_name;?></p>
+						<p style="padding-bottom:1%"><b> Other Name: </b><?php echo $other_name;?></p>
+						<p style="padding-bottom:1%"><b> Scientific Name: </b><i><?php echo $sci_name;?></i></p>
+						<p style="padding-bottom:1%"><b> Family: </b><?php echo $family;?></p>
 						</br> 
 						<!--done print herb_list-->
 				<?php 	
@@ -77,9 +90,9 @@
 							$disease=$data['disease'];
 				?>	
 							<!--print herb_info-->
-							<p style="padding-bottom:4px"><b> Part of Use: </b><?php echo $part;?></p>
-							<p style="padding-bottom:4px"><b> Expertise Function: </b><?php echo $function;?></p>
-							<p style="padding-bottom:4px"><b>Disease: </b><?php echo $disease;?></p>	
+							<p style="padding-bottom:1%"><b> Part of Use: </b><?php echo $part;?></p>
+							<p style="padding-bottom:1%"><b> Expertise Function: </b><?php echo $function;?></p>
+							<p style="padding-bottom:1%"><b>Disease: </b><?php echo $disease;?></p>	
 							<hr>
 				<?php 		
 						} /* end while print herb_info*/

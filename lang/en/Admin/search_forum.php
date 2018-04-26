@@ -7,7 +7,6 @@
 		$_SESSION['pages']="search_forum.php";
 		$page_title="forum";
 		include("menu.php");
-		include("../function.js");
 	?>
 	<title>Search Forum - SabahTCM</title>
 </head>
@@ -39,7 +38,7 @@
 				if($submit!=NULL || isset($_SESSION['search_topic'])){
 					$_SESSION['search_topic']=isset($top)?$top:$_SESSION['search_topic'];
 					$kw=$_SESSION['search_topic'];
-					$sql="SELECT * FROM topic WHERE topic LIKE '%$kw%'";
+					$sql="SELECT * FROM topic WHERE topic LIKE '%$kw%' and isReview=1";
 					$query=mysqli_query($conn,$sql) or die(mysqli_error($conn));
 			?>
 					<table id="forum" width="95%" border="1" align="center" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">
@@ -64,7 +63,7 @@
 								$topic_user=$catch1['username'];
 							}
 							//catch latest reply
-							$comment_show=mysqli_query($conn,"SELECT MAX(time_comment), user_id FROM comment WHERE topic_id='$topic_id' ")or die(mysqli_error($conn));
+							$comment_show=mysqli_query($conn,"SELECT MAX(time_comment), user_id FROM comment WHERE topic_id='$topic_id'")or die(mysqli_error($conn));
 							while($catch2=mysqli_fetch_assoc($comment_show)){
 								$comment_time=$catch2['MAX(time_comment)'];
 								$comment_user_id=$catch2['user_id'];

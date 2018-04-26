@@ -58,6 +58,7 @@
 					<textarea style="width:350px; height:160px" type="text-box" class="form-control" name="comment" placeholder="评论" required ></textarea>
 				</div>
 				<br><br>
+				<p style="text-align: center;">**评论只有在被管理员审核后才会呈现在论坛里。**</p>
 				<div class="control-group">
 					<div class="controls" style="padding-left: 250px" >
 						<button name="submit" type="submit" class="btn btn-save"><i class="icon-save icon-large"></i>&nbsp;存档</button>

@@ -28,8 +28,8 @@
 </head>
 <body>
 	<div id="breadcrumb">
-		<a class="btn btn-home" href="index.php"><i class="icon-home icon-large"></i>&nbsp;Home</a>&nbsp;&nbsp;>
-		<a class="btn btn-home" href="forum.php"><i class="icon-question icon-large"></i>&nbsp;Forum</a>&nbsp;&nbsp;>
+		<a class="btn btn-home" href="index.php"><i class="icon-home icon-large"></i>&nbsp;首页</a>&nbsp;&nbsp;>
+		<a class="btn btn-home" href="forum.php"><i class="icon-question icon-large"></i>&nbsp;论坛</a>&nbsp;&nbsp;>
 		<?php 
 			if($_SESSION['category_cn']=="问题"){
 		?>
@@ -57,7 +57,7 @@
 	<div id="body">
 		<div class="sidebar">	 
 			<p><a href="topic.php?category=<?php echo $_SESSION['category_cn'];?>" class="btn btn-info"><i class="icon-arrow-left icon-large"></i>&nbsp;回去</a>
-				<a class="pull-right btn btn-danger" style="color:white" href="delete_topic.php?id=<?php echo $id;?>"><i class="icon-trash icon-large"></i>删除</a></p>
+				<a class="pull-right btn btn-danger" style="color:white" href="delete_topic.php?id=<?php echo $id;?>"><i class="icon-trash icon-large"></i>&nbsp;删除</a></p>
 		</div>
 		<div class="content" style="margin-right: 15%">
 			<?php
@@ -70,42 +70,37 @@
 					$topic_details=$data['topic_details'];
 					$topic_time=$data['time_topic'];
 
-					$topic_user_show=mysqli_query($conn,"SELECT username FROM user WHERE user_id='$topic_user_id' ")or die(mysqli_error($conn));
+					$topic_user_show=mysqli_query($conn,"SELECT username FROM user WHERE user_id='$topic_user_id'")or die(mysqli_error($conn));
 					while($catch1=mysqli_fetch_assoc($topic_user_show)){
 						$topic_user=$catch1['username'];
 					}
 				}
 			?>
-			<table width="400" border="1" align="center" cellpadding="0" cellspacing="1" bg
-			color="#CCCCCC">
-				<tr>
-					<td><table width="100%" border="1" bordercolor="#FFFFFF" cellpadding="3" cellspacing="1"
-					bordercolor="1" bgcolor="#FFFFFF">
-						<col width='80'>
-						<tr>
-							<td colspan=3 bgcolor="#F8F7F1"><strong><?php echo $topic;?></strong></td>
-							
-						</tr>
-						<tr>
-							<td colspan=3 bgcolor="#F8F7F1"><?php echo $topic_details;?></td>
-						</tr>
-						<tr>
-							<td bgcolor="#F8F7F1"><strong>创建者</strong></td>
-							<td bgcolor="#F8F7F1">:</td>
-							<td bgcolor="#F8F7F1"><?php echo $topic_user;?></td>
-						</tr>
-						<tr>
-							<td bgcolor="#F8F7F1"><strong>日期、时间</td>
-							<td bgcolor="#F8F7F1">:</td>
-							<td bgcolor="#F8F7F1"></strong><?php echo $topic_time;?></td>
-						</tr>
-					</table></td>
-				</tr>
-			</table>
+			<table width="50%" border="1" align="center" cellpadding="0" cellspacing="1"><tr><td>
+				<table width="100%" border="1" bordercolor="#FFFFFF" cellpadding="3" cellspacing="1" bordercolor="1" style="background-color: #F8F7F1">
+					<col width='80'>
+					<tr>
+						<td colspan=3><strong><?php echo $topic;?></strong></td>
+					</tr>
+					<tr>
+						<td colspan=3><?php echo $topic_details;?></td>
+					</tr>
+					<tr>
+						<td><strong>创建者</strong></td>
+						<td>:</td>
+						<td><?php echo $topic_user;?></td>
+					</tr>
+					<tr>
+						<td><strong>日期、时间</strong></td>
+						<td>:</td>
+						<td><?php echo $topic_time;?></td>
+					</tr>
+				</table>
+			</td></tr></table>
 			<hr>
 			<?php
 				//comment part
-				$comment_show=mysqli_query($conn,"SELECT * FROM comment WHERE topic_id='$id' ")or die(mysqli_error($conn));
+				$comment_show=mysqli_query($conn,"SELECT * FROM comment WHERE topic_id='$id' AND isReview=1")or die(mysqli_error($conn));
 				while($data1=mysqli_fetch_array($comment_show)){
 					$comment_id=$data1['comment_id'];
 					$comment_user_id=$data1['user_id'];
@@ -116,30 +111,25 @@
 						$comment_user=$catch2['username'];
 					}
 			?>
-					<table width="400" border="1" align="center" cellpadding="0" cellspacing="1" bg
-					color="#CCCCCC">
-						<tr>
-							<td><table width="100%" border="1" cellpadding="3" bordercolor="#FFFFFF" cellspacing="1" bgcolor="#FFFFFF">
-								<tr>
-									<col width='80'>
-									<td bgcolor="#F8F7F1"><strong>回复</strong></td>
-									<td bgcolor="#F8F7F1">:</td>
-									<td bgcolor="#F8F7F1"><?php echo $comment;?></td>
-								</tr>
-								<tr>
-									<td bgcolor="#F8F7F1"><strong>回应者</strong></td>
-									<td bgcolor="#F8F7F1">:</td>
-									<td bgcolor="#F8F7F1"><?php echo $comment_user; ?></td>
-								</tr>
-								<tr>
-									<td bgcolor="#F8F7F1"><strong>日期、时间</strong></td>
-									<td bgcolor="#F8F7F1">:</td>
-									<td bgcolor="#F8F7F1"><?php echo $comment_time;?></td>
-								</tr>
-							</table></td>
-						</tr>
-					</table>
-					
+					<table width="50%" border="1" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC"><tr><td>
+						<table width="100%" border="1" cellpadding="3" bordercolor="#FFFFFF" cellspacing="1" style="background-color: #F8F7F1">
+							<tr><col width='80'>
+								<td><strong>回复</strong></td>
+								<td>:</td>
+								<td><?php echo $comment;?></td>
+							</tr>
+							<tr>
+								<td><strong>回应者</strong></td>
+								<td>:</td>
+								<td><?php echo $comment_user; ?></td>
+							</tr>
+							<tr>
+								<td><strong>日期、时间</strong></td>
+								<td>:</td>
+								<td><?php echo $comment_time;?></td>
+							</tr>
+						</table>
+					</td></tr></table>
 			<?php
 				}/*end while show answer*/
 				mysqli_close($conn);

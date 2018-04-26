@@ -6,7 +6,7 @@
 		session_start();
 		$_SESSION['topic_id']=$_GET['id'];
 		$id=$_SESSION['topic_id'];
-		$_SESSION['pages']="topic_view.php?id=$id";
+		$_SESSION['pages']="topic_view.php?id=".$id;
 		$page_title="forum";
 		include("menu.php");
 		$catch_topic=mysqli_query($conn,"SELECT topic FROM topic WHERE topic_id='$id'")or die(mysqli_error($conn));
@@ -74,36 +74,32 @@
 					}
 				}
 			?>
-			<table width="400" border="1" align="center" cellpadding="0" cellspacing="1" bg
-			color="#CCCCCC">
-				<tr>
-					<td><table width="100%" border="1" bordercolor="#FFFFFF" cellpadding="3" cellspacing="1"
-					bordercolor="1" bgcolor="#FFFFFF">
-						<col width='80'>
-						<tr>
-							<td colspan=3 bgcolor="#F8F7F1"><strong><?php echo $topic;?></strong></td>
-							
-						</tr>
-						<tr>
-							<td colspan=3 bgcolor="#F8F7F1"><?php echo $topic_details;?></td>
-						</tr>
-						<tr>
-							<td bgcolor="#F8F7F1"><strong>By</strong></td>
-							<td bgcolor="#F8F7F1">:</td>
-							<td bgcolor="#F8F7F1"><?php echo $topic_user;?></td>
-						</tr>
-						<tr>
-							<td bgcolor="#F8F7F1"><strong>Date/time</td>
-							<td bgcolor="#F8F7F1">:</td>
-							<td bgcolor="#F8F7F1"></strong><?php echo $topic_time;?></td>
-						</tr>
-					</table></td>
-				</tr>
-			</table>
+			<table width="50%" border="1" align="center" cellpadding="0" cellspacing="1" bg
+			color="#CCCCCC"><tr><td>
+				<table width="100%" border="1" bordercolor="#FFFFFF" cellpadding="3" cellspacing="1" bordercolor="1" style="background-color: #F8F7F1">
+					<col width='80'>
+					<tr>
+						<td colspan=3><strong><?php echo $topic;?></strong></td>
+					</tr>
+					<tr>
+						<td colspan=3><?php echo $topic_details;?></td>
+					</tr>
+					<tr>
+						<td><strong>By</strong></td>
+						<td>:</td>
+						<td><?php echo $topic_user;?></td>
+					</tr>
+					<tr>
+						<td><strong>Date/time</strong></td>
+						<td>:</td>
+						<td><?php echo $topic_time;?></td>
+					</tr>
+				</table>
+			</td></tr></table>
 			<hr>
 			<?php
 				//comment part
-				$comment_show=mysqli_query($conn,"SELECT * FROM comment WHERE topic_id='$id' ")or die(mysqli_error($conn));
+				$comment_show=mysqli_query($conn,"SELECT * FROM comment WHERE topic_id='$id' and isReview=1")or die(mysqli_error($conn));
 				while($data1=mysqli_fetch_array($comment_show)){
 					$comment_id=$data1['comment_id'];
 					$comment_user_id=$data1['user_id'];
@@ -114,29 +110,25 @@
 						$comment_user=$catch2['username'];
 					}
 			?>
-					<table width="400" border="1" align="center" cellpadding="0" cellspacing="1" bg
-					color="#CCCCCC">
-						<tr>
-							<td><table width="100%" border="1" cellpadding="3" bordercolor="#FFFFFF" cellspacing="1" bgcolor="#FFFFFF">
-								<tr>
-									<col width='80'>
-									<td bgcolor="#F8F7F1"><strong>Respond</strong></td>
-									<td bgcolor="#F8F7F1">:</td>
-									<td bgcolor="#F8F7F1"><?php echo $comment;?></td>
-								</tr>
-								<tr>
-									<td bgcolor="#F8F7F1"><strong>By</strong></td>
-									<td bgcolor="#F8F7F1">:</td>
-									<td bgcolor="#F8F7F1"><?php echo $comment_user; ?></td>
-								</tr>
-								<tr>
-									<td bgcolor="#F8F7F1"><strong>Date/Time</strong></td>
-									<td bgcolor="#F8F7F1">:</td>
-									<td bgcolor="#F8F7F1"><?php echo $comment_time;?></td>
-								</tr>
-							</table></td>
-						</tr>
-					</table>
+					<table width="50%" border="1" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC"><tr><td>
+						<table width="100%" border="1" cellpadding="3" bordercolor="#FFFFFF" cellspacing="1" style="background-color: #F8F7F1">
+							<tr><col width='80'>
+								<td><strong>Respond</strong></td>
+								<td>:</td>
+								<td><?php echo $comment;?></td>
+							</tr>
+							<tr>
+								<td><strong>By</strong></td>
+								<td>:</td>
+								<td><?php echo $comment_user; ?></td>
+							</tr>
+							<tr>
+								<td><strong>Date/Time</strong></td>
+								<td>:</td>
+								<td><?php echo $comment_time;?></td>
+							</tr>
+						</table>
+					</td></tr></table>
 					
 			<?php
 				}/*end while show answer*/

@@ -79,86 +79,86 @@
 						
 				<!--Scientific Name-->
 				<div class="form-group">
-					<label style="padding-left: 143px">Scientific Name:</label>
-					<input style="width:350px" type="text" data-toggle="tooltip" data-placement="right" title="Fillin the Scientific Name" class="form-control" value="<?php if(isset($sci_name)) echo $sci_name;?>" name="sci_name" placeholder="Herbs' Scientific Name" required />
+					<label style="padding-left: 18.2%">Scientific Name:</label>
+					<input style="width:50%" type="text" data-toggle="tooltip" data-placement="right" title="Fillin the Scientific Name" class="form-control" value="<?php if(isset($sci_name)) echo $sci_name;?>" name="sci_name" placeholder="Herbs' Scientific Name" required autofocus/>
 				</div>
 				<br><br>
 						
 				<!--Local Name-->
 				<div class="form-group">
-					<label style="padding-left: 177px">Local Name:</label>
-					<input style="width:350px" type="text" data-toggle="tooltip" data-placement="right" title="Fillin Only One Local Name" class="form-control" value="<?php if(isset($herb_name)) echo $herb_name;?>" name="herb_name" placeholder="Herbs' Local Name" />
+					<label style="padding-left: 22.4%">Local Name:</label>
+					<input style="width:50%" type="text" data-toggle="tooltip" data-placement="right" title="Fillin Only One Local Name" class="form-control" value="<?php if(isset($herb_name)) echo $herb_name;?>" name="herb_name" placeholder="Herbs' Local Name" />
 				</div>
 				<br><br>
 				<!--Local Name in Chinese-->
 				<div class="form-group">
-					<label style="padding-left: 90px">Local Name (Chinese):</label>
-					<input style="width:350px" type="text" data-toggle="tooltip" data-placement="right" title="Fillin Only One Local Name in Chinese" class="form-control" value="<?php if(isset($herb_name_cn)) echo $herb_name_cn;?>" name="herb_name_cn" placeholder="Herbs' Local Name in Chinese" />
+					<label style="padding-left: 11.4%">Local Name (Chinese):</label>
+					<input style="width:50%" type="text" data-toggle="tooltip" data-placement="right" title="Fillin Only One Local Name in Chinese" class="form-control" value="<?php if(isset($herb_name_cn)) echo $herb_name_cn;?>" name="herb_name_cn" placeholder="Herbs' Local Name in Chinese" />
 				</div>
 				<br><br>
 
 				<!--Other Name-->
 				<div class="form-group">
-					<label style="padding-left: 173px">Other Name:</label>
-					<input style="width:350px" type="text" data-toggle="tooltip" data-placement="right" title="Fillin The Other Names" class="form-control" value="<?php if(isset($other_name)) echo $other_name;?>" name="other_name" placeholder="Herbs' Other Name" />
+					<label style="padding-left: 21.9%">Other Name:</label>
+					<input style="width:50%" type="text" data-toggle="tooltip" data-placement="right" title="Fillin The Other Names" class="form-control" value="<?php if(isset($other_name)) echo $other_name;?>" name="other_name" placeholder="Herbs' Other Name" />
 				</div>
 				<br><br>
 				<!--Other Name in Chinese-->
 				<div class="form-group">
-					<label style="padding-left: 86px">Other Name (Chinese):</label>
-					<input style="width:350px" type="text" data-toggle="tooltip" data-placement="right" title="Fillin The Other Names in Chinese" class="form-control" value="<?php if(isset($other_name_cn)) echo $other_name_cn;?>" name="other_name_cn" placeholder="Herbs' Other Name in Chinese" />
+					<label style="padding-left: 10.9%">Other Name (Chinese):</label>
+					<input style="width:50%" type="text" data-toggle="tooltip" data-placement="right" title="Fillin The Other Names in Chinese" class="form-control" value="<?php if(isset($other_name_cn)) echo $other_name_cn;?>" name="other_name_cn" placeholder="Herbs' Other Name in Chinese" />
 				</div>
 				<br><br>
 				
 				<!--Family-->
 				<div class="form-group">
-					<label style="padding-left: 219px">Family:</label>
-					<input style="width:350px" type="text" data-toggle="tooltip" data-placement="right" title="Fillin the Family" class="form-control" value="<?php if(isset($family)) echo $family;?>" name="family" placeholder="Herbs's Family" />
+					<label style="padding-left: 27.6%">Family:</label>
+					<input style="width:50%" type="text" data-toggle="tooltip" data-placement="right" title="Fillin the Family" class="form-control" value="<?php if(isset($family)) echo $family;?>" name="family" placeholder="Herbs's Family" />
 				</div>
 				<br><br>
 				<!--Family in Chinese-->
 				<div class="form-group">
-					<label style="padding-left: 132px">Family (Chinese):</label>
-					<input style="width:350px" type="text" data-toggle="tooltip" data-placement="right" title="Fillin the Family in Chinese" class="form-control" value="<?php if(isset($family_cn)) echo $family_cn;?>" name="family_cn" placeholder="Herbs's Family in Chinese" />
+					<label style="padding-left: 16.7%">Family (Chinese):</label>
+					<input style="width:50%" type="text" data-toggle="tooltip" data-placement="right" title="Fillin the Family in Chinese" class="form-control" value="<?php if(isset($family_cn)) echo $family_cn;?>" name="family_cn" placeholder="Herbs's Family in Chinese" />
 				</div>
 				<br><br>
 
 				<!--Usage Part-->
 				<div class="form-group">
-					<label style="padding-left: 161px">Part of Usage:</label>
-					<input style="width:350px" type="text" data-toggle="tooltip" data-placement="right" title="Fillin Only One Part of Usage" class="form-control" value="<?php if(isset($part)) echo $part;?>" name="part" placeholder="Herb's Usage Part" />
+					<label style="padding-left:20.4%">Part of Usage:</label>
+					<input style="width:50%" type="text" data-toggle="tooltip" data-placement="right" title="Fillin Only One Part of Usage" class="form-control" value="<?php if(isset($part)) echo $part;?>" name="part" placeholder="Herb's Usage Part" />
 				</div>
 				<br><br>
 				<!--Usage Part in Chinese-->
 				<div class="form-group">
-					<label style="padding-left: 74px">Part of Usage (Chinese):</label>
-					<input style="width:350px" type="text" data-toggle="tooltip" data-placement="right" title="Fillin Only One Part of Usage in Chinese" class="form-control" value="<?php if(isset($part_cn)) echo $part_cn;?>" name="part_cn" placeholder="Herb's Usage Part in Chinese" />
+					<label style="padding-left: 9.4%">Part of Usage (Chinese):</label>
+					<input style="width:50%" type="text" data-toggle="tooltip" data-placement="right" title="Fillin Only One Part of Usage in Chinese" class="form-control" value="<?php if(isset($part_cn)) echo $part_cn;?>" name="part_cn" placeholder="Herb's Usage Part in Chinese" />
 				</div>
 				<br><br>
 
 				<!--Function-->
 				<div class="form-group">
-					<label style="padding-left: 117px">Expertise Function:</label>
-					<input style="width:350px" type="text" data-toggle="tooltip" data-placement="right" title="Fillin Only One Expertise Function" class="form-control" value="<?php if(isset($function)) echo $function;?>" name="function" placeholder="Herb's Function" />
+					<label style="padding-left: 14.9%">Expertise Function:</label>
+					<input style="width:50%" type="text" data-toggle="tooltip" data-placement="right" title="Fillin Only One Expertise Function" class="form-control" value="<?php if(isset($function)) echo $function;?>" name="function" placeholder="Herb's Function" />
 				</div>
 				<br><br>
 				<!--Function in Chinese-->
 				<div class="form-group">
-					<label style="padding-left: 30px">Expertise Function (Chinese):</label>
-					<input style="width:350px" type="text" data-toggle="tooltip" data-placement="right" title="Fillin Only One Expertise Function in Chinese" class="form-control" value="<?php if(isset($function_cn)) echo $function_cn;?>" name="function_cn" placeholder="Herb's Function in Chinese" />
+					<label style="padding-left: 4%">Expertise Function (Chinese):</label>
+					<input style="width:50%" type="text" data-toggle="tooltip" data-placement="right" title="Fillin Only One Expertise Function in Chinese" class="form-control" value="<?php if(isset($function_cn)) echo $function_cn;?>" name="function_cn" placeholder="Herb's Function in Chinese" />
 				</div>
 				<br><br>
 
 				<!--Disease-->
 				<div class="form-group">
-					<label style="padding-left: 209px">Disease:</label>
-					<input style="width:350px" type="text" data-toggle="tooltip" data-placement="right" title="Fillin Only One Type of Disease" class="form-control" name="disease" value="<?php if(isset($disease)) echo $disease;?>" placeholder="Disease Treat" >
+					<label style="padding-left: 26.4%">Disease:</label>
+					<input style="width:50%" type="text" data-toggle="tooltip" data-placement="right" title="Fillin Only One Type of Disease" class="form-control" name="disease" value="<?php if(isset($disease)) echo $disease;?>" placeholder="Disease Treat" >
 				</div>
 				<br><br>
 				<!--Disease in Chinese-->
 				<div class="form-group">
-					<label style="padding-left: 122px">Disease (Chinese):</label>
-					<input style="width:350px" type="text" data-toggle="tooltip" data-placement="right" title="Fillin Only One Type of Disease in Chinese" class="form-control" name="disease_cn" value="<?php if(isset($disease_cn)) echo $disease_cn;?>" placeholder="Disease Treat in Chinese" />
+					<label style="padding-left: 15.5%">Disease (Chinese):</label>
+					<input style="width:50%" type="text" data-toggle="tooltip" data-placement="right" title="Fillin Only One Type of Disease in Chinese" class="form-control" name="disease_cn" value="<?php if(isset($disease_cn)) echo $disease_cn;?>" placeholder="Disease Treat in Chinese" />
 				</div>
 				<br><br>
 
@@ -167,16 +167,16 @@
 					<?php
 						$dir = '../../../pics';
 						if(isset($image) && $image != null){
-						 echo '<img style="width:350px; height:350px;margin:0px 40px 0px 250px" src="'. $dir. '/'. $image. '"  /> </br></br>';
+						 echo '<img style="margin: 0% 0% 0% 45%;" width="30%" height="auto" src="'. $dir. '/'. $image. '"  /> </br></br>';
 						}
 					?>
-					<label style="padding-left: 220px" >Image:</label>	
-					<input class="form-control"  style="padding-left: 200;width:350px;" type="file" name="image" multiple>
+					<label style="padding-left: 27.8%" >Image:</label>	
+					<input class="form-control"  style=" padding-left: 200;width:50%;" type="file" name="image" multiple>
 				</div>
 				<br><br>
 				<!--Save, update & delete-->
 				<div class="control-group">
-					<div class="controls" style="padding-left: 350px" >
+					<div class="controls" style="padding-left: 50%" >
 					<?php
 						if(isset($mode) && $mode == 1){
            					$m=$_GET['m'];

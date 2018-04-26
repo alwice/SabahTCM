@@ -5,9 +5,8 @@
 	<?php
 		session_start();
 		if(!isset($_SESSION['userID'])){
-			header("location: login.php");
+			echo "<script>location.href='login.php';</script>";
 		}
-		//session_abort();
 		$_SESSION['pages']="forum.php";
 		$page_title="forum";
 		include("menu.php");

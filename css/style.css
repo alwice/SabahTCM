@@ -1,5 +1,5 @@
 /* Website template by freewebsitetemplates.com */
-
+@media (min-width: 768px){
 html { overflow-y: scroll; }
 
 
@@ -42,7 +42,10 @@ p a:hover {
 }
 
 #header div {
-	background: url(../images/background.jpg);
+	background: url(../images/background1.jpg);
+	/*background-size: cover;*/
+	/*background-position: 50% 20*/; 
+	background-color: white;
 	/*padding-bottom: 5px;*/
 	margin: center;
 	width: 100%;
@@ -56,6 +59,7 @@ p a:hover {
 #header div div#logo div {
 	background: rgba(223, 255, 223, .3);
 	width: 100%;
+	font-family: Impact;
 }
 #header div div#logo div p{
 	font-size:40px;
@@ -797,3 +801,4 @@ div.body div div.content ul li div h1 a:hover {
 	text-shadow: 0 1px #353446;
 }
 
+}

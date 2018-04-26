@@ -6,8 +6,7 @@
 	<link href="css/style.css" rel="stylesheet" /> <!--style navigation-->
 	<link href="css/font-awesome.css" rel="stylesheet" /> <!--font-awsome icon-->
 	<link href="css/docs.css" rel="stylesheet" /> <!--doc css-->
-	<link href="css/style.css" rel="stylesheet" type="text/css" >
-	
+	<link href="css/style.css" rel="stylesheet" type="text/css" >	
 	<link href="css/bootstrap.min.css" rel="stylesheet"/> <!--Bootstrap-->
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script> <!--Bootstrap script-->

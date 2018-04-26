@@ -36,7 +36,7 @@
 			$message = "Here is your login information for accessing the SabahTCM."."\nPlease use this password to login.\nPassword: ".$password;
 			$email_from = "admin@sabahtcm.com";
 			$headers = "From: ".$email_from;
-			if(@mail($to, $subject, $message, $headers)){
+			if(mail($to, $subject, $message, $headers)){
 				echo "Your Password has been sent to your email.";
 			}else{
 				echo "Failed to Recover your password, try again";
