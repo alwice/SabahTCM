@@ -64,7 +64,7 @@
 						</br>
 
 						<!--print herb_list-->
-						<img id="herbImg" alt="<?php echo $herb_name;?>" width="30%" height="auto" style="float:right; margin:5% 0px 0px 5%; max-height: 200px;" src="../../../pics/<?php echo $image;?>" onclick="enlarge();"/>
+						<img id="herbImg" alt="<?php echo $herb_name;?>" width="30%" height="auto" style="float:right; margin:5% 0px 0px 5%; max-height: 200px; object-fit: cover;" src="../../../pics/<?php echo $image;?>" onclick="enlarge();"/>
 
 						<!-- The Modal -->
 						<div id="enlargeImg">
