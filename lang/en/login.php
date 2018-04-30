@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="Content-Type" conetent="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<?php 
 		session_start();
 		$_SESSION['pages']="login.php";
@@ -70,7 +72,6 @@
 				</form>
 			</div>
 		</div>
-		</br></br>
 	</div>				
 	<?php
 		include("footer.php");

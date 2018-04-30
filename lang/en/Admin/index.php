@@ -27,11 +27,9 @@
 				<p>Sabah Traditional Chinese Medicine Database (SabahTCM) collected data from validated information. In addition, SabahTCM also verified the data with expertise in Sabah.</p>
 				
 				<h1>What makes different?</h1>
-				<p>Sabah Traditional Chinese Medicine Database (SabahTCM) has the advanced in which it may be review in bilingual (English and Chinese). Besides, Forum is provided for the users and admins to interact and exchange opinion.</p>
-			
+				<p>Sabah Traditional Chinese Medicine Database (SabahTCM) has the advanced in which it may be review in bilingual (English and Chinese). Besides, Forum is provided for the users and admins to interact and exchange opinion.</p>			
 			</div><!--end content div-->
 		</div><!--end div-->
-		</br></br>
 	</div><!--end body div-->
 	<?php
 		include("footer.php");

@@ -128,7 +128,6 @@
 				mysqli_close($conn);
 			?>
 		</div>
-		</br>
 	</div>
 	<?php
 		include ("footer.php");

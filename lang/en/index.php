@@ -15,8 +15,7 @@
 		</br>
 		<div style="border-radius:12px" id="home">
 			<div class="sidebar">
-				<img src="../../images/home.jpg" alt="Image">			
-				<!-- <img style="width:300px; height:300px; float:right;margin:10px 10px 55px 0px" src="../../images/home2.jpg" alt="Image"> -->
+				<img src="../../images/home.jpg">			
 			</div>
 			<div class="content">
 			</br>
@@ -31,7 +30,6 @@
 			
 			</div><!--end content div-->
 		</div><!--end div-->
-		</br></br>
 	</div><!--end body div-->
 	<?php
 		include("footer.php");

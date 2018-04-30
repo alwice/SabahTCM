@@ -152,7 +152,6 @@
 				}/*end add topic Opinion and Suggestion*/
 			?>
 		</div>
-		</br>
 	</div>
 	<?php
 		include ("footer.php");

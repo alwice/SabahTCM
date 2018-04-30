@@ -26,7 +26,7 @@
 						$herbs_id=$row['herb_id'];
 						$herb_name=$row['local_name'];
 				?>
-						<li><a href="herbs.php?id=<?php echo $herbs_id;?>&amp;herb=<?php echo $herb_name;?>"><?php echo $herb_name;?><i class="pull-right col-lg-4 icon-expand icon-medium">&nbsp;Details</i></a></li>
+						<li><a href="herbs.php?id=<?php echo $herbs_id;?>&amp;herb=<?php echo $herb_name;?>"><?php echo $herb_name;?><i class="pull-right col-lg-4 icon-expand icon-medium">&nbsp;</i></a></li>
 				<?php 
 					}/*end while listing*/
 				?>
@@ -99,7 +99,6 @@
 				?>
 			</div><!--end content div-->
 		</div><!--end div-->
-		</br></br>
 	</div><!--end body div-->
 	<?php
 		include("footer.php");

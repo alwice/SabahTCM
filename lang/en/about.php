@@ -25,13 +25,8 @@
 			<br/>
 			<h3>Contact Us</h3>
 			<p>Developer: Neoh Yee Jin&nbsp;<i style="padding-left: 64px" class="icon-envelope icon-large"></i>&nbsp;alwice@hotmail.com</p>
-			<o>Supervisor: Dr. Aslina Baharum&nbsp;<i style="padding-left: 10px" class="icon-envelope icon-large"></i>&nbsp;aslina@ums.edu.my</p>
-
-
-
-
+			<p>Supervisor: Dr. Aslina Baharum&nbsp;<i style="padding-left: 10px" class="icon-envelope icon-large"></i>&nbsp;aslina@ums.edu.my</p>
 		</div>
-		</br></br>
 	</div>
 	<?php
 		include ("footer.php");

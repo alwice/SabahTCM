@@ -99,7 +99,6 @@
 				</tr></tfoot>
 			</table>		
 		</div>
-		</br>
 	</div>
 	<?php
 		include ("footer.php");

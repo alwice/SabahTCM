@@ -66,10 +66,8 @@
 				</div>
 		    </form>					
 		</div>
-		</br>	
 	</div>
-	</br></br>
-    <?php 
+   <?php 
     	if(isset($_POST['submit'])){
     		$topic_id=$_POST['topic_id'];
     		$user_id=$_POST['user_id'];

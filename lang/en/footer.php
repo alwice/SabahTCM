@@ -12,8 +12,7 @@
 			</br></br>
 			<p style="text-align: center;"><i>All the information is for reference purpose only. Please refer to Physician or Herbalist for more details.</i></p>
 			<p class="footnote">&copy; 2018 Universiti Malaysia Sabah</p>
-		</div>
-		
+		</div>		
 	</div>
 </body>
 </html>

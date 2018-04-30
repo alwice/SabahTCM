@@ -137,7 +137,6 @@
 						<td colspan="6">&nbsp;</td>
 					</tr></tfoot>
 				</table>
-				</br></br>
 		</div>
 	</div>
 	<?php

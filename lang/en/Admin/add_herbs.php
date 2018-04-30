@@ -212,7 +212,6 @@
 				</div>
 	   		</form>					
 		</div>
-		</br></br>		
     </div>
 	<?php
 		include("footer.php");
