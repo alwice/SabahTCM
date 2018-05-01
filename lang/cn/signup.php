@@ -55,13 +55,13 @@
 				<br><br>
 				<!--Security Question-->
 				<div class="form-group">
-					<label style="padding-left: 61px">安全问题：</label>
+					<label style="padding-left: 110px">安全问题：</label>
 					<?php include "list_squestion.php";?>
 				</div>
 				<br><br>
 				<!--Security Answer-->
 				<div class="form-group">
-					<label style="padding-left: 73px">安全打啊：</label>
+					<label style="padding-left: 110px">安全答案：</label>
 					<input style="width:300px" type="text" data-toggle="tooltip" data-placement="right" class="form-control" value="<?php echo $sanswer;?>" name="sanswer" placeholder="answer" required>
 				</div>
 				<br><br>

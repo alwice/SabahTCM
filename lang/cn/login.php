@@ -38,7 +38,6 @@
 					
 					<?php
 						if(isset($_POST['submit'])){
-							// session_start();
 							$username = $_POST['username'];
 							$password = $_POST['password'];
 							$query = "SELECT * FROM user WHERE username='$username' AND password='$password'";
@@ -52,7 +51,7 @@
 								mysqli_close($conn);
 
 								if($_SESSION['isAdmin']==1){
-								$url='Admin';
+								$url='admin';
 								echo '<META HTTP-EQUIV=REFRESH CONTENT="1; '.$url.'">';
 								}
 								else{

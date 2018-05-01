@@ -1,5 +1,5 @@
 <select style="width:60%" type="text" data-toggle="tooltip" data-placement="right" class="form-control" name="squestion" id="squestion" required>
-	<option value="">Select one</option>
+	<option value="">选一个</option>
 	<option value="What was your childhood nickname?">What was your childhood nickname?</option>
 	<option value="What is the name of your favorite childhood friend?">What is the name of your favorite childhood friend?</option>
 	<option value="Who was you childhood hero?">Who was you childhood hero?</option>

@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" conetent="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<?php
 		session_start();
 		if(!isset($_SESSION['userID'])){
@@ -39,7 +40,6 @@
 					while($row=mysqli_fetch_array($cat)){
 						$category_id=$row['category_id'];
 						$category=$row['category'];
-						$category_redirect=$row['directTo'];
 				?>
 						<p><button class="form-control" name="category" value="<?php echo $category;?>" type="submit" style="margin-left" formaction="topic.php"><?php echo $category;?></button></p>
 				<?php

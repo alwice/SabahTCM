@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="Content-Type" conetent="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="../../css/selfstyle.css" rel="stylesheet" type="text/css">
 <script src="../../js/self.js"></script>
