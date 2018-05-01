@@ -41,13 +41,13 @@ p a:hover {
 }
 
 #header div {
-	background: url(../images/background1.jpg);
+	/*background: url(../images/background1.jpg);*/
 	background-color: white;
 	margin: center;
 	width: 100%;
 }
 #header div img{
-	width: 8%!important;
+	width: 10%!important;
 	height: auto;
 	float:left;
 	margin: 2% 0px 0px 0px; 

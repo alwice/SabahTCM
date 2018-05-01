@@ -1,7 +1,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" conetent="text/html; charset=UTF-8">
-	<link href="../../images/logo2.png" rel="icon" > <!--Icon-->
+	<link href="../../images/logo3.png" rel="icon" > <!--Icon-->
 	<link href="../../css/font-awesome.css" rel="stylesheet" > <!--font-awsome icon-->
 	<link href="../../css/docs.css" rel="stylesheet" > <!--doc css-->
 	<link href="../../css/bootstrap.min.css" rel="stylesheet"> <!--Bootstrap-->
@@ -81,7 +81,7 @@
 		&nbsp;&nbsp;|||&nbsp;&nbsp;
 		<a href="../cn/<?php echo $_SESSION['pages'];?>"><img src="../../images/cn.ico">&nbsp;CN</a></p>
 		<div>	
-			<a href="index.php"><img src="../../images/logo2.png">
+			<a href="index.php"><img src="../../images/logo3.png">
 				<span class='seperater'></span>
 			<div id="logo">
 				<p></p>

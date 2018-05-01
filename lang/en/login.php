@@ -20,7 +20,7 @@
 		<div id="home" style="width:500px">
 			<div>
 				<div id="hd">
-					<p>User Login</p>
+					User Login
 				</div>
 				<form class="form-inline" method="POST">
 					<div class="form-group">
@@ -34,13 +34,13 @@
 					</div>
 					</br>
 					</br><a href="forgotPassword.php" style="margin-left: 300px">Forgot Password</a>
+					<a href="signup.php" style="margin-left: 300px">Sign Up</a>
 					<div class="form-group" style="padding-top:20px">
 						<button class="form-control" id="login" name="submit" type="submit" class="btn" style="margin-left: 200px;"><i class="icon-signin icon-large"></i>&nbsp;Login</button>
 					</div>
 					
 					<?php
 						if(isset($_POST['submit'])){
-							// session_start();
 							$username = $_POST['username'];
 							$password = $_POST['password'];
 							$query = "SELECT * FROM user WHERE username='$username' AND password='$password'";
