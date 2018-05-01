@@ -20,7 +20,7 @@
 				<!--Start listing all herbs-->
 				<ul id="list">		
 				<?php 							
-					$herb_query=mysqli_query($conn,"SELECT * FROM herb_list ORDER BY herb_id DESC")or die(mysqli_error($conn));
+					$herb_query=mysqli_query($conn,"SELECT * FROM herb_list ORDER BY local_name")or die(mysqli_error($conn));
 			
 					while($row=mysqli_fetch_array($herb_query)){
 						$herbs_id=$row['herb_id'];
