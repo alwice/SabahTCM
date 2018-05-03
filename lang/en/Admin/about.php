@@ -26,8 +26,14 @@
 			<p>Sabah Traditional Chinese Medicine Database (SabahTCM) is a data collection that store the information about the traditional Chinese medicine/herbs that found in Sabah state. Besides, this Site also provided some information about the usage of herbs in summary and the picture.</p>
 			<br/>
 			<h3>Contact Us</h3>
-			<p>Developer: Neoh Yee Jin&nbsp;<i style="padding-left: 64px" class="icon-envelope icon-large"></i>&nbsp;alwice@hotmail.com</p>
-			<o>Supervisor: Dr. Aslina Baharum&nbsp;<i style="padding-left: 10px" class="icon-envelope icon-large"></i>&nbsp;aslina@ums.edu.my</p>
+			<p>Developer: Neoh Yee Jin
+				<span class="break"></br></span>
+				<span style="padding-left: 64px" class="padding">&nbsp;</span>
+				<i class="icon-envelope icon-large"></i>&nbsp;alwice@hotmail.com</p>
+			<p>Supervisor: Dr. Aslina Baharum
+				<span class="break"></br></span>
+				<span style="padding-left: 10px" class="padding">&nbsp;</span>
+				<i class="icon-envelope icon-large"></i>&nbsp;aslina@ums.edu.my</p>
 		</div>
 	</div>
 	<?php
