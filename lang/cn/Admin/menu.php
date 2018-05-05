@@ -70,7 +70,7 @@
 		<a href="../../en/admin/<?php echo $_SESSION['pages'];?>"><img style="" src="../../../images/en.ico">&nbsp;EN</a></p>
 
 		<div>		
-			<a href="index.php"><img src="../.././images/logo3.png">
+			<a href="index.php"><img src="../../../images/logo3.png">
 				<span class='seperater'></span>
 			<div id="logo">
 				<p></p>

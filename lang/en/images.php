@@ -20,8 +20,7 @@
 			<div class="content" style="margin-right: 15%">
 				<h3>Search Herb</h3>
 				</br>
-				<div style="background:lightblue; width:80%; text-align: center">*****  Please make sure file uploaded is in format of .JPG or .PNG  *****
-				</div>
+				<div style="background:lightblue; width:80%; text-align: center">Please make sure file uploaded is in format of .JPG or .PNG</div>
 				</br>
 
 				<?php
@@ -93,10 +92,11 @@
 								
 									$compareMachine = new compareImages($image1);
 									$diff = $compareMachine->compareWith($image2);
-									If($diff<22){
+									If($diff<16){
 				?>
 										<p>Herb Found</p>
 										Herb Name:
+										<span class="herb_break"></br></span>
 										<a href="herbs.php?id=<?php echo $herbs_id;?>&amp;herb=<?php echo $herb_name;?>"><?php echo $herb_name;?>&nbsp;&nbsp;&nbsp;<i class="icon-expand icon-medium">&nbsp; Detail</i></a>
 										</br>
 				<?php
@@ -104,7 +104,7 @@
 									}/*end <11*/	
 								}/*end while fetch data*/
 								// Displying the herb do not found
-								If(isset($diff) && $diff>22){
+								If(isset($diff) && $diff>16){
 				?>
 									<p>Herb Not Found</p>
 				<?php			

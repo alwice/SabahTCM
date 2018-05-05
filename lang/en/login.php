@@ -23,7 +23,7 @@
 
 				<!--Username-->
 				<div class="form-group">
-					<label for="inputEmail">Username: </label>
+					<label>Username: </label>
 					<input class="form-control" type="text" name="username" id="username" placeholder="Username" title="Fillin your username" required>
 				</div>
 				</br><span class="form_break"></br></span>
@@ -42,8 +42,7 @@
 				<div class="form-group" style="padding-top:2%">
 					<button class="form-control" id="login" name="submit" type="submit"><i class="icon-signin icon-large"></i>&nbsp;Login</button>
 				</div>
-			</form>
-
+			
 				<?php
 					if(isset($_POST['submit'])){
 						$username = $_POST['username'];
@@ -74,7 +73,7 @@
 						}/*end of else denied*/
 					}/*end of if submit*/
 				?>
-			
+			</form>
 		</div>
 	</div>				
 	<?php

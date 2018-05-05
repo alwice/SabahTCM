@@ -13,13 +13,13 @@
 </head>
 <body>
 	<div id="breadcrum">
-		<a class="btn btn-home" href="index.php"><i class="icon-home icon-large"></i>&nbsp;Home</a>&nbsp;&nbsp;>
-		<a class="btn btn-home" href="contact.php"><i class="icon-question icon-large"></i>&nbsp;About Us</a>&nbsp;&nbsp;
+		<a href="index.php"><i class="icon-home icon-large"></i>&nbsp;Home</a>&nbsp;&nbsp;>
+		<a href="contact.php"><i class="icon-question icon-large"></i>&nbsp;About Us</a>&nbsp;&nbsp;
 	</div>
 	</br>
 
 	<div id="body">
-		<div class="content" style="text-align:justify; padding-left:5px">	
+		<div class="content">	
 			<h3>About Us</h3>
 			<p>This website is for Final Year Project (FYP) of Faculty of Computing and Informatics (FCI) in Universiti Malaysia Sabah (UMS) only, in partial fulfilment of the requirements for the Degree of Bachelor of Computer Science with Honours.</p>
 			<p>The main purpose of FYP is let the students to understand and apply the theoretical knowledge, also to derive, apply and adapt solutions from the discipline specific knowledge to a realistic problem solving context that related to computer science.</p>
